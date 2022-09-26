@@ -13,6 +13,7 @@ header h1{
     font-size: 4rem;
     text-align: center;
     margin: 1rem 0;
+    font-family: 'Courier New';
 } 
 
 /* Navbar */
@@ -236,7 +237,23 @@ input[type='radio'] {
     font-size: 1.1rem;
 }
 
-footer{
+.mapa_2, .mapa_3{
+    display: none;
+}
+
+.mapa_1{
+    z-index: 1;
+}
+
+.baja{
+    z-index: 2;
+}
+
+.abajo, .visible{
+    z-index: 3;
+}
+
+.footer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,3 +263,17 @@ footer{
     font-size: 1.2rem;
 }
 
+.footer p strong{
+    margin-left: 0.8rem;
+}
+
+.container-footer-icon{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.container-footer-icon a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+}

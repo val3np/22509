@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="sin fondo.ico">
+    <script src="https://kit.fontawesome.com/58ed9529f3.js" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -13,26 +15,25 @@
     <header>
         <h1><b>TuBook</b></h1>
 
-        <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
+        <button class="btn-menu" onclick="accion()"><i class="fa-solid fa-bars"></i></button>
     </header>
 
      <!--Navbar-->
      <nav class="nav" id="nav">
-      <ul class="nav_ul">
-        <li class="nav_li"><a href="index.html">Inicio</a></li>
-        <li class="sub-menu"><a href="#" data-toggle="dropdown">Género</a>
+      <ul class="nav_ul ocultar">
+        <li class="nav_li"><a href="index.html" class="nav_link">Inicio</a></li>
+        <li class="sub-menu"><a href="#" class="nav_link" data-toggle="dropdown">Género</a>
             <div class="dropdown">
               <ul>
-                  <li><a href="#fantasia">Fantasía</a></li>
-                  <li><a href="#romance">Romance</a></li>
-                  <li><a href="#terror">Terror</a></li>
+                  <li class="enlace"><a href="#fantasia" class="nav_link" onclick="acciones()">- Fantasía</a></li>
+                  <li class="enlace"><a href="#romance" class="nav_link" onclick="acciones()">- Romance</a></li>
+                  <li class="enlace"><a href="#terror" class="nav_link" onclick="acciones()">- Terror</a></li>
               </ul>
             </div>
         </li>
-        <li class="nav_li"><a href="somos.html">Somos</a></li>
-        <li class="nav_li"><a href="contacto.html">Contacto</a></li>
+        <li class="nav_li"><a href="somos.html" class="nav_link">Somos</a></li>
+        <li class="nav_li no-borde"><a href="contacto.html" class="nav_link">Contacto</a></li>
       </ul>
-      <!-- <span id="indicador"></span> -->
     </nav>
         
     <main>
@@ -238,11 +239,13 @@
      
     <!--Footer-->
     <footer class="footer">
-        <p>Copyright © <strong>TuBook</strong></p>
+        <p>Copyright ©<strong>TuBook</strong></p>
         <div class="container-footer-icon">
-
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/58ed9529f3.js" crossorigin="anonymous"></script>
+    
   </body>
 </html>
