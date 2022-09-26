@@ -23,8 +23,8 @@ header h1{
     font-size: 4rem;
     text-align: center;
     margin-bottom: 1rem;
-} 
-
+    font-family: 'Courier New';
+}
 
 header .btn-menu{
     visibility: hidden;
@@ -35,10 +35,9 @@ header .btn-menu{
     display: flex;
     background-color: #95b6c4;
     justify-content: center;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
     position: sticky;
     top: 0;
-    overflow: hidden;
 }
 
   
@@ -64,40 +63,47 @@ header .btn-menu{
   text-align: center;
 }
 
-.nav_ul li a:hover{
+.nav_ul li .nav_link:hover{
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.4s ease;
 }
 
 .nav_ul li ul{
   display: none;
 }
+
+.dropdown ul{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+}
+
 .dropdown ul li{ 
-  background-color: #c0cdd4;
+  background-color: #fff;
+}
+
+.dropdown ul li a{
+    text-align: left;
 }
 
 .dropdown ul li:hover{
-  background-color: #80b1c2;
+  /*background-color: #80b1c2;*/
+  transition: all 0.5s ease;
 }
 
 .nav_ul li:hover ul{
   position: absolute;
   text-decoration: none;
   display: block;
-  z-index: 2;
-  background-color: #80b1c2;
+  background-color: rgb(243, 239, 239);
   min-width: 8rem;
   margin: 0;
   padding: 0;
 }
 
-/*#indicador{
-    width: 10rem;
-    height: 0.4rem;
-    background-color: rgb(246, 245, 230);
-    position: absolute;
-    bottom: 0;
-}*/
+.nav_ul li .nav_link:hover{
+    color: #047aa9;
+    transition: all 0.4s ease;
+}
 
 .container-youtube{
   display: flex;
@@ -123,7 +129,7 @@ h2 a{
 }
 
 .cards{
-    margin: 0rem 13rem;
+    margin: 2rem 13rem;
 }
 
 .container{
@@ -204,12 +210,27 @@ h2 a{
     font-size: 1.2rem;
 }
 
+.footer p strong{
+    margin-left: 0.8rem;
+}
+
+.container-footer-icon{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.container-footer-icon a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+}
 
 @media (max-width: 992px) {
 
     header{
         display: flex;
-        background-color:   #5dbcc3;
+        background-color: #95b6c4;
+        height: 4rem;
     }
 
 
@@ -224,7 +245,7 @@ h2 a{
     header .btn-menu{
         visibility: visible;
         position: absolute;
-        top: 1rem;
+        top: 1.2rem;
         right: 2rem;
         font-size: 1.5rem;
         background-color: transparent;
@@ -232,41 +253,65 @@ h2 a{
         outline: none;
     }
 
-    .btn-ver:hover  .nav{
-        visibility: visible;
+    .btn-menu:hover{
+        color: #fff;
+        transition: color 0.4s ease;
     }
 
     .nav{
         margin: 0;
         position: absolute;
-        top: 5rem;
-        left: 2rem;
-        background-color: transparent;
+        top: 4rem;
+        right: 3rem;
+        width: 13rem;
+        background-color: rgb(235, 226, 226);
+        border-radius: 0.5rem;
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+    .nav_ul li ul{
+        display: flex;
+        flex-direction: column;
         box-shadow: none;
     }
 
-
-    .nav i:checked .nav{
-        visibility: visible;
+    .dropdown ul li{ 
+        background-color: rgb(227, 221, 221);
     }
 
-    .nav{
-        width: 13rem;
-        background-color: #95b6c4;
-        visibility: hidden;
+      .nav_ul li:hover ul{
+        position: static;
+        box-shadow: none;
+    }
+
+    .nav ul li a{
+        text-align: left;
+        margin-left: 1rem;
     }
 
     .nav .nav_ul > li{
         float: none;
         margin: 0.5rem 0;
+        width: 13rem;
     }
     
+    .dropdown ul li a{
+        margin-left: 2rem;
+    }
+   
+    .nav_ul li .nav_link:hover{
+        color: #047aa9;
+        transition: all 0.4s ease;
+        background-color: #fff;
 
-    .nav_ul li:hover ul{
-        top: 4.95rem;
-        left: 13rem;
-        width: 13rem;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown ul li:hover{
+        box-shadow: none;
+        background-color: #fff;
     }
 
     .container-youtube{
@@ -295,7 +340,6 @@ h2 a{
 }
 
 @media (max-width: 576px){
-
     header{
         height: 4rem;
     }
@@ -317,10 +361,31 @@ h2 a{
         margin: 0 3rem;
         padding: 0;
     }
+
     .container{
         grid-template-columns: 1fr;
         grid-template-rows:  4fr;
         justify-content: center;
     }
-     
+
+    .footer{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer p{
+        margin-bottom: 1rem;
+    }
+
+    .footer p strong{
+        margin-left: 0.8rem;
+    }
+
+    .container-footer-icon{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
 }
