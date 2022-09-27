@@ -1,3 +1,5 @@
+//Para abrir y cerrar el menú
+
 function accion(){
     console.log('Esta fucionando mi botón');
     var ancla = document.getElementsByClassName('nav_ul');
