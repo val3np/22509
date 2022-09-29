@@ -225,6 +225,10 @@ h2 a{
     margin-left: 1rem;
 }
 
+.container-footer-icon a:hover{
+    color: #fff;
+}
+
 @media (max-width: 992px) {
 
     header{

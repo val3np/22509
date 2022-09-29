@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,6 +16,12 @@ header h1{
     margin: 1rem 0;
     font-family: 'Courier New';
 } 
+
+/*Menú hamburguesa*/
+header .btn-menu{
+    visibility: hidden;
+    position: absolute;
+}
 
 /* Navbar  */
 
@@ -200,6 +207,7 @@ input[type='radio'] {
     top: 20rem;
     right: 10rem;*/
     flex-direction: column;
+    justify-content: center;
 }
 
 .card-1{
@@ -224,7 +232,7 @@ input[type='radio'] {
     background-color: #f1f1f1;
 }
 
-.card-1:active{
+.card-1:active, .card-2:active, .card-3:active{
     background-color: rgba(109, 195, 244, 0.5);
 }
 
@@ -243,14 +251,6 @@ input[type='radio'] {
 
 .mapa_1{
     z-index: 1;
-}
-
-.baja{
-    z-index: 2;
-}
-
-.abajo, .visible{
-    z-index: 3;
 }
 
 .footer{
@@ -276,4 +276,210 @@ input[type='radio'] {
     text-decoration: none;
     color: rgb(0, 0, 0);
     margin-left: 1rem;
+}
+
+.container-footer-icon a:hover{
+    color: #fff;
+}
+
+@media (max-width: 1248px) {
+    .nav .nav_ul > li{
+        float: left;
+        margin: 0 5rem;
+      }
+
+    .container{
+        justify-content: center;
+        margin-left: 2rem;
+    }
+
+    .form{
+        width: 50vw;
+    }
+    
+    .mapa{
+        position: static;
+        justify-content: center;
+    }
+
+    .container-mapas{
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .mapa_1, .mapa_2, .mapa_3{
+        width: 35rem;
+        margin-left: 3rem;
+    }
+
+    .container-card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-1, .card-2, .card-3{
+        width: 35rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    header{
+        display: flex;
+        background-color: #95b6c4;
+        height: 4rem;
+    }
+
+
+    header h1{
+        margin: 0 2rem 0 0;
+        justify-content: flex-start;
+        align-self: center;
+        width: 20rem;
+        font-size: 3.2rem;
+    }
+
+    header .btn-menu{
+        visibility: visible;
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .btn-menu:hover{
+        color: #fff;
+        transition: color 0.4s ease;
+    }
+
+    .nav{
+        margin: 0;
+        position: absolute;
+        top: 4rem;
+        right: 3rem;
+        width: 13rem;
+        background-color: rgb(235, 226, 226);
+        border-radius: 0.5rem;
+        box-shadow: 0 0.4rem 1rem rgb(0 0 0 / 20%);
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+    .nav_ul li ul{
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+      .nav_ul li:hover ul{
+        position: static;
+        box-shadow: none;
+    }
+
+    .nav ul li a{
+        text-align: left;
+        margin-left: 1rem;
+        background-color: rgb(235, 226, 226);
+    }
+
+    .nav .nav_ul > li{
+        float: none;
+        margin: 0.5rem 0;
+        width: 13rem;
+    }
+   
+    .nav_ul li a:hover{
+        color: #047aa9;
+        transition: all 0.4s ease;
+        background-color: #fff;
+
+    }
+}
+
+@media (max-width: 576px){
+    header{
+        height: 4rem;
+    }
+
+    header i{
+        top: 1.2rem;
+    }
+
+    header h1{
+        font-size: 3rem;
+        margin-top: 0.3rem;
+    }
+
+    #title{
+        font-size: 2.5rem
+    }
+
+    .container{
+        margin-left: 1.5rem;
+        justify-content: center;
+    }
+
+    .form{
+        padding: 0;
+        margin: 0;
+        width: 70vw;
+    }
+    
+    .form-input{
+        width: 20rem;
+    }
+
+    .textarea{
+        min-width: 90%;
+    }
+
+    .mapa{
+        justify-content: center;
+    }
+    
+    .mapa_1, .mapa_2, .mapa_3{
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0em 2rem 0rem;
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .mapa_2, .mapa_3{
+        display: none;
+    }
+
+    
+    .card-1, .card-2, .card-3{
+        width: 25rem;
+        margin-left: 3rem;
+    }
+
+    .footer{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer p{
+        margin-bottom: 1rem;
+    }
+
+    .footer p strong{
+        margin-left: 0.8rem;
+    }
+
+    .container-footer-icon{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
 }
