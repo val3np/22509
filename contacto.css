@@ -31,6 +31,10 @@ nav{
     background-color: #95b6c4;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    z-index: 10;
 }
   
 .nav ul{

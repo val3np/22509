@@ -27,26 +27,25 @@
     <h1 id="title-pag">Contacto</h1>
 
     <section class="container">
-        <form class="form" name="form" id="form" action="https://formspree.io/f/maykorbq" method="POST">
+        <form class="form" name="form" id="form" action="https://formspree.io/f/maykorbq" method="POST"> <!--action="https://formspree.io/f/maykorbq"-->
 
             <div class="form-section">
                 <label for="name-cliente" class="label">Nombre</label>
                 <div class="formulario">
-                    <input type="text" class="form-input" name="nombre" id="name-cliente" maxlength="30" placeholder="Ingrese su nombre" required>
+                    <input type="text" class="form-input" name="nombre" id="nameCliente" maxlength="30" placeholder="Ingrese su nombre">
                 </div>
             </div>
 
             <div class="form-section">
                 <label for="last-name-cliente" class="label">Apellido</label>
                 <div class="formulario">
-                    <input type="text" name="apellido" class="form-input" id="name-cliente" maxlength="30" placeholder="Ingrese su apellido" required>
-                </div>
+                    <input type="text" name="apellido" class="form-input" id="lastName" maxlength="30" placeholder="Ingrese su apellido">
             </div>
 
              <div class="form-section">
-                <label for="mail-cliente" class="label">Mail</label>
+                <label for="mail-cliente" class="label">Email</label>
                 <div class="formulario">
-                    <input type="email" name="email" class="form-input" id="mail-cliente" placeholder="Ingrese su mail" required>
+                    <input type="email" name="email" class="form-input" id="emailCliente" placeholder="Ingrese su mail">
                 </div>
             </div>
 
@@ -60,7 +59,7 @@
             <div class="form-section">
                 <label for="country-cliente" class="label">País</label>
                 <div class="formulario">
-                    <input type="text" name="pais" class="form-input" id="name-cliente" maxlength="15" placeholder="Ingrese su país">
+                    <input type="text" name="pais" class="form-input" id="pais" maxlength="15" placeholder="Ingrese su país">
                 </div>
             </div>
 
@@ -68,11 +67,11 @@
                 <label for="motivo" class="label">Motivo del contacto</label>
                 <div class="form-radio">
                     <div class="form-radio-check">
-                        <input type="radio" name="motivo" id="consulta" value="consulta" required>
+                        <input type="radio" name="motivo" id="consulta motivo" value="consulta">
                         <label for="consulta" class="label-radio">Consulta</label>
                     </div>
                     <div class="form-radio-check">
-                        <input type="radio" name="motivo" id="sugerencia" value="sugerencia" required>
+                        <input type="radio" name="motivo" id="sugerencia motivo" value="sugerencia">
                         <label for="consulta" class="label-radio">Sugerencia</label>
                     </div>
                 </div>
@@ -81,7 +80,7 @@
             <div class="form-section">
                 <label for="mensaje" class="label" id="mensaje">Mensaje</label>
                 <br>
-                <textarea name="mensaje" name="mensaje" class="textarea"  id="txt-area" cols="30" rows="10" placeholder="Ingrese su mensaje" required></textarea>
+                <textarea name="mensaje" name="mensaje" class="textarea"  id="txt-area" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
             </div>
 
             <div class="form-btn">
