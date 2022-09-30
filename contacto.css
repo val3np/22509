@@ -78,7 +78,7 @@ nav{
 
 /* Comienzo del formulario */
 
-.container{
+.form-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;

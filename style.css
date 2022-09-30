@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,181 +14,711 @@ body{
 
 header{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-header img{
-    width: 30rem;
-    height: 8rem;
-}  
+
+header h1{
+    margin-top: 0.8rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Courier New';
+}
+
+header .btn-menu{
+    visibility: hidden;
+    position: absolute;
+}
 
 .nav{
-    display: block;
-    height: 4rem;
-    background-color: #80b1c2;
-    text-decoration: none;
-    width: 100%;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    display: flex;
+    background-color: #95b6c4;
+    justify-content: center;
+   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
     position: sticky;
-    top: 0rem;
+    top: 0;
 }
 
-.nav .nav_ul, .dropdown ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0.5rem;
+  
+.nav ul{
+    list-style: none;
 }
 
-nav li{
-    display: flex;
-    align-items: center;
+.nav .nav_ul > li{
+  float: left;
+  margin: 0 4rem;
 }
 
-
-nav ul li > a{
-    text-decoration: none;
-    padding: 0.5rem 0.8rem;
-    color: #000000;
-    font-weight: bold;
-    text-align: center;
-    width: 13rem;
+.nav_ul li a{
+  padding: 1.2rem;
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
-.nav_ul li a:hover{
-    color: #ffffff;
-    text-decoration: none;
+.nav_ul li .nav_link:hover{
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease;
 }
 
-
-.dropdown{
-    background-color: #c0cdd4;
-    text-decoration: none;
-    position: absolute;
-    top: 4rem;
-    left: 29rem;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
-}
-
-.nav_ul li a:hover .dropdown{
-    text-decoration: none;
+.nav_ul li ul{
+  display: none;
 }
 
 .dropdown ul{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+}
+
+.dropdown ul li{ 
+  background-color: #fff;
+}
+
+.dropdown ul li a{
+    text-align: left;
+}
+
+.dropdown ul li:hover{
+  transition: all 0.5s ease;
+}
+
+.nav_ul li:hover ul{
+  position: absolute;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(243, 239, 239);
+  min-width: 8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_ul li a:hover{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.sub-menu .dropdown li a:hover{
+    color: #047aa9;
+}
+
+#title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+    background-color:  #95b6c4 ;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.footer p strong{
+    margin-left: 0.8rem;
+}
+
+.container-footer-icon{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.container-footer-icon a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+}
+
+.container-footer-icon a:hover{
+    color: #fff;
+}
+
+
+/*---------------------------------------------------------------Inicio-----------------------------------------------------------------------*/
+.container-youtube{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+h2{
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.3rem;
+    font-weight: bold;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dS1JKXBJfE-cuB-rmF0-kJcYwcuj-DU7XA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h2 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.cards{
+    margin: 2rem 13rem;
+}
+
+.container{
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  1fr;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+    width: 17rem;
+    border: 1px solid #777474;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+.card:hover{
+    box-shadow:  0rem 0rem 0.6rem rgba(33, 142, 231, 0.5);
+}
+
+.card-img-top{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-body{
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 2rem;
+    margin: 0;
+    padding: 0.7rem 0 0 0;
+}
+
+.card-text{
+    font-size: 1.1rem;
+    padding: 0.3rem 0 1.5rem 0;
+    margin: 0;
+}
+
+.btn-ver{
+    padding: 0.6em;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-radius: 8%;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    width: 3.8rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.btn-ver:hover{
+    background-color: rgb(11, 94, 215);
+}
+
+/*------------------------------------------------------------Contacto--------------------------------------------------------------------------*/
+/* Comienzo del formulario */
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.form{
+    padding: 1rem;
+    min-width: 30vw;
+
+}
+
+.form-input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0 0.6rem 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #f1f1f1;;
+}
+
+.form-input::placeholder{
+    color: #898484;
+}
+
+
+.form-input:hover, .textarea:hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 0.7rem rgba(23, 165, 247, 0.5);
+    border: 0.1rem solid rgba(23, 165, 247, 0.5);
+    transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none; 
+  margin: 0; 
+  
+}
+.form-radio{
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.form-radio-check{
+    padding: 0.3rem;
+}
+
+input[type='radio'] { 
+    transform: scale(1.3); 
+    margin-right: 0.5rem; 
+}
+
+.label-radio{
+    font-size: 1.1rem;
+}
+
+.label{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.textarea{
+    margin: 0.7rem 0 1rem 0;
+    padding: 0.7rem;
+    min-width: 100%;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #f1f1f1;
+}
+
+.textarea::placeholder{
+    color: #898484;
+    font-weight: normal;
+}
+
+.form-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
 }
 
-.dropdown ul li{
-    text-align: center;
-}
-
-
-.dropdown ul li:hover{
-    background-color: #95b6c4;
+.btn-borrar, .btn-enviar{
+    padding: 0.6em;
+    font-size: 1rem;
     color: #ffffff;
+    background-color: blue;
+    border-radius: 8%;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(119, 117, 117, 0.25);
+    font-weight: 500;
+    border: none;
 }
 
+.btn-enviar{
+    margin-left: 0.5rem;
+}
 
-.container-youtube{
+.btn-enviar:hover, .btn-borrar:hover{
+    opacity: 0.7;
+}
+
+/* Comienzo de la sección mapa */
+
+.mapa{
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    justify-content: right;
+    top: 20rem;
+    right: 7rem;
+}
+
+.container-mapas{
+    margin-bottom: 4rem;
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 2rem 0;
-  }
-  
-  h2{
-      padding: 2rem;
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 2.3rem;
-      font-weight: bold;
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dS1JKXBJfE-cuB-rmF0-kJcYwcuj-DU7XA&usqp=CAU");
-      background-repeat: no-repeat;
-      background-position: center;
-  }
-  
-  h2 a{
-      text-decoration: none;
-      color: #ffffff;
-  }
-  
-  .container{
-      display: grid;
-      grid-gap: 2rem;
-      margin: 3rem 0 3rem 3rem;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows:  1fr;
-      justify-content: space-around;
-  }
-  
-  .card{
-      display: flex;
-      flex-wrap: wrap;
-      box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
-      width: 17rem;
-      border: 1px solid #777474;
-      border-radius: 0.5rem;
-  }
-  
-  .card:hover{
-      box-shadow:  0rem 0rem 0.6rem rgba(33, 142, 231, 0.5);
-  }
-  
-  .card-img-top{
-      display: flex;
-      width:100%;
-      justify-content: center;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-  }
-  
-  .card-body{
-      display: flex;
-      flex-direction: column;
-      margin-left: 1rem;
-      overflow: hidden;
-  }
-  
-  .card-title{
-      font-size: 1.2rem;
-      font-weight: 600;
-      height: 2rem;
-      margin: 0;
-      padding: 0.7rem 0 0 0;
-  }
-  
-  .card-text{
-      font-size: 1.1rem;
-      padding: 0.3rem 0 1.5rem 0;
-      margin: 0;
-  }
-  
-  .btn-ver{
-      padding: 0.6em;
-      font-size: 1rem;
-      color: #ffffff;
-      background-color: blue;
-      border-radius: 8%;
-      text-decoration: none;
-      font-weight: 500;
-      margin-bottom: 1rem;
-      width: 3.8rem;
-      box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
-  }
-  
-  .btn-ver:hover{
-      opacity: 0.7;
-  }
-  
-  .footer{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 4rem 0 0 0;
-      background-color:  #95b6c4 ;
-      padding: 1.1rem;
-      font-size: 1.2rem;
-  }
-  
+}
+
+.card-1{
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+    border: 0.1rem solid rgba(203, 196, 196, 0.5);
+    padding: 2rem;
+}
+
+.card-2, .card-3{
+    border-left: 0.1rem solid rgba(203, 196, 196, 0.5);
+    border-bottom: 0.1rem solid rgba(203, 196, 196, 0.5);
+    border-right: 0.1rem solid rgba(203, 196, 196, 0.5);
+    padding: 2rem;
+}
+
+.card-3{
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover{
+    background-color: #f1f1f1;
+}
+
+.card-1:active, .card-2:active, .card-3:active{
+    background-color: rgba(109, 195, 244, 0.5);
+}
+
+.card-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text{
+    font-size: 1.1rem;
+}
+
+.mapa_2, .mapa_3{
+    display: none;
+}
+
+.mapa_1{
+    z-index: 1;
+}
+
+/*---------------------------------------------------------------Somos-------------------------------------------------------------------------*/
+
+.main-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    font-size: 1.2rem;
+    margin: 2rem 10rem 0 10rem;
+}
+
+span{
+    font-size: 1.5rem;
+}
+
+.pag-contacto{
+    text-decoration: none;
+    font-style: bold;
+}
+
+.img-somos{
+    margin: 3rem 0;
+    width: 40%;
+    height: 20rem;
+    border-radius: 1%;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+    box-shadow:  0rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5)
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    @media (max-width: 1248px) {
+
+        /*------------------------------------------------Formulario------------------------------------------------------------------*/
+        .form-container{
+            justify-content: center;
+            margin-left: 2rem;
+        }
+    
+        .form{
+            width: 50vw;
+        }
+        
+        .mapa{
+            position: static;
+            justify-content: center;
+        }
+    
+        .container-mapas{
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+    
+        .mapa_1, .mapa_2, .mapa_3{
+            width: 35rem;
+            margin-left: 3rem;
+        }
+    
+        .container-card{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .card-1, .card-2, .card-3{
+            width: 35rem;
+        }
+        /*------------------------------------------------------Somos-----------------------------------------------------------*/
+        .img-somos{
+            margin: 3rem 0;
+            width: 35rem;
+            height: 20rem;
+        }
+    }
+
+@media (max-width: 992px) {
+
+    header{
+        display: flex;
+        background-color: #95b6c4;
+        height: 4rem;
+    }
+
+
+    header h1{
+        margin: 0 2rem 0 0;
+        justify-content: flex-start;
+        align-self: center;
+        width: 20rem;
+        font-size: 3.2rem;
+    }
+
+    header .btn-menu{
+        visibility: visible;
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .btn-menu:hover{
+        color: #fff;
+        transition: color 0.4s ease;
+    }
+
+    .nav{
+        margin: 0;
+        position: absolute;
+        top: 4rem;
+        right: 3rem;
+        width: 13rem;
+        background-color: rgb(235, 226, 226);
+        border-radius: 0.5rem;
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+    .nav_ul li ul{
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .dropdown ul li{ 
+        background-color: rgb(227, 221, 221);
+    }
+
+      .nav_ul li:hover ul{
+        position: static;
+        box-shadow: none;
+    }
+
+    .nav ul li a{
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .nav .nav_ul > li{
+        float: none;
+        margin: 0.5rem 0;
+        width: 13rem;
+    }
+    
+    .dropdown ul li a{
+        margin-left: 2rem;
+    }
+   
+    .nav_ul li .nav_link:hover{
+        color: #047aa9;
+        transition: all 0.4s ease;
+        background-color: #fff;
+
+    }
+
+    .dropdown ul li:hover{
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    /*---------------------------------------------------------------Inicio--------------------------------------------------------------------*/
+
+    .container-youtube{
+        margin: 2rem 0;
+    }
+
+    iframe{
+        margin: 0 0.5rem;
+    }
+
+    .video{
+        height: 27rem !important;
+    }
+
+    .cards{
+        margin: 0 5rem;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  2fr;
+        justify-content: space-evenly;
+    }
+    /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
+    .text{
+        width: 75%;
+        margin: 0 10rem;
+    }
+}
+
+@media (max-width: 769px){
+    .img-somos{
+        margin: 3rem 0;
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 576px){
+    header{
+        height: 4rem;
+    }
+
+    header i{
+        top: 1.2rem;
+    }
+
+    header h1{
+        font-size: 3rem;
+        margin-top: 0.3rem;
+    }
+
+    .footer{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer p{
+        margin-bottom: 1rem;
+    }
+
+    .footer p strong{
+        margin-left: 0.8rem;
+    }
+
+    .container-footer-icon{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #title{
+        font-size: 2.5rem
+    }
+
+    /*-----------------------------------------------------------Inicio---------------------------------------------------------------------*/
+
+    .video{
+        height: 20rem !important;
+    }
+
+    .cards{
+        margin: 0 3rem;
+        padding: 0;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows:  4fr;
+        justify-content: center;
+    }
+
+    /*----------------------------------------------------Formulario---------------------------------------------------------------------*/
+    .form-btn{
+        margin-left: 1.5rem;
+        justify-content: center;
+    }
+
+    .form{
+        padding: 0;
+        margin: 0;
+        width: 70vw;
+    }
+    
+    .form-input{
+        width: 20rem;
+    }
+
+    .textarea{
+        min-width: 90%;
+    }
+
+    .mapa{
+        justify-content: center;
+    }
+    
+    .mapa_1, .mapa_2, .mapa_3{
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0em 2rem 0rem;
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .mapa_2, .mapa_3{
+        display: none;
+    }
+
+    
+    .card-1, .card-2, .card-3{
+        width: 20rem;
+        margin-left: 3rem;
+    }
+
+}

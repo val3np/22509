@@ -67,7 +67,7 @@ nav{
     margin: 2rem 0;
 }
 
-.main{
+.main-somos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@ span{
     font-style: bold;
 }
 
-img{
+.img-somos{
     margin: 3rem 0;
     width: 40%;
     height: 20rem;
@@ -133,7 +133,7 @@ img{
         margin: 0 5rem;
       }
 
-      img{
+      .img-somos{
         margin: 3rem 0;
         width: 35rem;
         height: 20rem;
@@ -229,7 +229,7 @@ img{
 }
 
 @media (max-width: 769px){
-    img{
+    .img-somos{
         margin: 3rem 0;
         width: 20rem;
         height: 15rem;
