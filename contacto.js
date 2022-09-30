@@ -88,9 +88,9 @@ const mapa1 = document.getElementById("mapa_1");
 const mapa2 = document.getElementById("mapa_2");
 const mapa3 = document.getElementById("mapa_3");
 
-card1.addEventListener("click", primerMapa)
-card2.addEventListener("click", segundoMapa)
-card3.addEventListener("click", tercerMapa)
+card1.addEventListener("click", primerMapa);
+card2.addEventListener("click", segundoMapa);
+card3.addEventListener("click", tercerMapa);
 
 function tercerMapa(){
     mapa3.style.display = "flex";

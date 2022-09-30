@@ -100,9 +100,13 @@ header .btn-menu{
   padding: 0;
 }
 
-.nav_ul li .nav_link:hover{
-    color: #047aa9;
+.nav_ul li a:hover{
+    color: #fff;
     transition: all 0.4s ease;
+}
+
+.sub-menu .dropdown li a:hover{
+    color: #047aa9;
 }
 
 .container-youtube{
