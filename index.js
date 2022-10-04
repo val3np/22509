@@ -1,29 +1,27 @@
 //Para abrir y cerrar el menú
 
 function accion(){
-    console.log('Esta fucionando mi botón');
-    var ancla = document.getElementsByClassName('nav_ul');
-    for(var i = 0; i < ancla.length; i++){
+    let ancla = document.getElementsByClassName('nav_ul');
+    for(let i = 0; i < ancla.length; i++){
         ancla[i].classList.toggle('ocultar');
     }}
 
 function acciones(){
-    console.log('Esta fucionando mi botón');
-    var enlace = document.getElementsByClassName('nav_ul');
-    for(var i = 0; i < enlace.length; i++){
+    let enlace = document.getElementsByClassName('nav_ul');
+    for(let i = 0; i < enlace.length; i++){
         enlace[i].classList.toggle('ocultar');
     }}
 
     
 //Validación del formulario
 
-const form = document.querySelector('#form');
+let form = document.querySelector('#form');
 form.addEventListener('submit', btnSubmit);
 
     async function btnSubmit(e){
         e.preventDefault()
-        const form = new FormData(this);
-        const response = await fetch(this.action , {
+        let form = new FormData(this);
+        let response = await fetch(this.action , {
             method: this.method,
             body: form,
             headers: {
@@ -80,12 +78,12 @@ form.addEventListener('submit', btnSubmit);
 
 // Selección de los mapas
 
-const card3 = document.getElementById("card-3");
-const card2 = document.getElementById("card-2");
-const card1 = document.getElementById("card-1");
-const mapa1 = document.getElementById("mapa_1");
-const mapa2 = document.getElementById("mapa_2");
-const mapa3 = document.getElementById("mapa_3");
+let card3 = document.getElementById("card-3");
+let card2 = document.getElementById("card-2");
+let card1 = document.getElementById("card-1");
+let mapa1 = document.getElementById("mapa_1");
+let mapa2 = document.getElementById("mapa_2");
+let mapa3 = document.getElementById("mapa_3");
 
 card1.addEventListener("click", primerMapa);
 card2.addEventListener("click", segundoMapa);
@@ -108,3 +106,8 @@ function segundoMapa(){
     mapa3.style.display = "none";
     mapa1.style.display = "none";
 }
+
+
+
+
+
