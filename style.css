@@ -279,7 +279,7 @@ h2 a{
 .card-content{
   width: 100%;
 }
-.cerrar button{
+.btn-cerrar button{
   float: right;
   position: relative;
   top: -1.2rem;
