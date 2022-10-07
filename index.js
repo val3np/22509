@@ -107,6 +107,215 @@ function segundoMapa(){
     mapa1.style.display = "none";
 }
 
+//Seleccionar una card
+
+function verInfoCard(){
+    document.getElementById("libros").style.display = "flex";
+    document.getElementById("libro1").style.display = "flex";
+    document.getElementById("libro2").style.display = "none";
+    document.getElementById("libro3").style.display = "none";
+    document.getElementById("triangulo1").style.display = "flex";
+    document.getElementById("triangulo2").style.display = "none";
+    document.getElementById("triangulo3").style.display = "none";
+};
+
+function verInfoCard2(){
+    document.getElementById("libros").style.display = "flex";
+    document.getElementById("libro1").style.display = "none";
+    document.getElementById("libro2").style.display = "flex";
+    document.getElementById("libro3").style.display = "none";
+    document.getElementById("triangulo2").style.display = "flex";
+    document.getElementById("triangulo1").style.display = "none";
+    document.getElementById("triangulo3").style.display = "none";
+};
+
+function verInfoCard3(){
+    document.getElementById("libros").style.display = "flex";
+    document.getElementById("libro1").style.display = "none";
+    document.getElementById("libro2").style.display = "none";
+    document.getElementById("libro3").style.display = "flex";
+    document.getElementById("triangulo3").style.display = "flex";
+    document.getElementById("triangulo2").style.display = "none";
+    document.getElementById("triangulo1").style.display = "none";
+};
+
+function verInfoCard4(){
+    document.getElementById("libros2").style.display = "flex";
+    document.getElementById("libro4").style.display = "flex";
+    document.getElementById("libro5").style.display = "none";
+    document.getElementById("libro6").style.display = "none";
+    document.getElementById("triangulo4").style.display = "flex";
+    document.getElementById("triangulo5").style.display = "none";
+    document.getElementById("triangulo6").style.display = "none";
+};
+
+function verInfoCard5(){
+    document.getElementById("libros2").style.display = "flex";
+    document.getElementById("libro4").style.display = "none";
+    document.getElementById("libro5").style.display = "flex";
+    document.getElementById("libro6").style.display = "none";
+    document.getElementById("triangulo5").style.display = "flex";
+    document.getElementById("triangulo6").style.display = "none";
+    document.getElementById("triangulo4").style.display = "none";
+};
+
+function verInfoCard6(){
+    document.getElementById("libros2").style.display = "flex";
+    document.getElementById("libro4").style.display = "none";
+    document.getElementById("libro5").style.display = "none";
+    document.getElementById("libro6").style.display = "flex";
+    document.getElementById("triangulo6").style.display = "flex";
+    document.getElementById("triangulo5").style.display = "none";
+    document.getElementById("triangulo4").style.display = "none";
+};
+
+function verInfoCard7(){
+    document.getElementById("libros3").style.display = "flex";
+    document.getElementById("libro7").style.display = "flex";
+    document.getElementById("libro8").style.display = "none";
+    document.getElementById("libro9").style.display = "none";
+    document.getElementById("triangulo7").style.display = "flex";
+    document.getElementById("triangulo8").style.display = "none";
+    document.getElementById("triangulo9").style.display = "none";
+};
+
+function verInfoCard8(){
+    document.getElementById("libros3").style.display = "flex";
+    document.getElementById("libro7").style.display = "none";
+    document.getElementById("libro8").style.display = "flex";
+    document.getElementById("libro9").style.display = "none";
+    document.getElementById("triangulo8").style.display = "flex";
+    document.getElementById("triangulo7").style.display = "none";
+    document.getElementById("triangulo9").style.display = "none";
+};
+
+function verInfoCard9(){
+    document.getElementById("libros3").style.display = "flex";
+    document.getElementById("libro7").style.display = "none";
+    document.getElementById("libro8").style.display = "none";
+    document.getElementById("libro9").style.display = "flex";
+    document.getElementById("triangulo9").style.display = "flex";
+    document.getElementById("triangulo8").style.display = "none";
+    document.getElementById("triangulo7").style.display = "none";
+};
+
+function verInfoCard10(){
+    document.getElementById("libros4").style.display = "flex";
+    document.getElementById("libro10").style.display = "flex";
+    document.getElementById("libro11").style.display = "none";
+    document.getElementById("libro12").style.display = "none";
+    document.getElementById("triangulo10").style.display = "flex";
+    document.getElementById("triangulo11").style.display = "none";
+    document.getElementById("triangulo12").style.display = "none";
+};
+
+function verInfoCard11(){
+    document.getElementById("libros4").style.display = "flex";
+    document.getElementById("libro10").style.display = "none";
+    document.getElementById("libro11").style.display = "flex";
+    document.getElementById("libro12").style.display = "none";
+    document.getElementById("triangulo11").style.display = "flex";
+    document.getElementById("triangulo10").style.display = "none";
+    document.getElementById("triangulo12").style.display = "none";
+};
+
+function verInfoCard12(){
+    document.getElementById("libros4").style.display = "flex";
+    document.getElementById("libro10").style.display = "none";
+    document.getElementById("libro11").style.display = "none";
+    document.getElementById("libro12").style.display = "flex";
+    document.getElementById("triangulo12").style.display = "flex";
+    document.getElementById("triangulo11").style.display = "none";
+    document.getElementById("triangulo10").style.display = "none";
+};
+
+function verInfoCard13(){
+    document.getElementById("libros5").style.display = "flex";
+    document.getElementById("libro13").style.display = "flex";
+    document.getElementById("libro14").style.display = "none";
+    document.getElementById("libro15").style.display = "none";
+    document.getElementById("triangulo13").style.display = "flex";
+    document.getElementById("triangulo14").style.display = "none";
+    document.getElementById("triangulo15").style.display = "none";
+};
+
+function verInfoCard14(){
+    document.getElementById("libros5").style.display = "flex";
+    document.getElementById("libro13").style.display = "none";
+    document.getElementById("libro14").style.display = "flex";
+    document.getElementById("libro15").style.display = "none";
+    document.getElementById("triangulo14").style.display = "flex";
+    document.getElementById("triangulo13").style.display = "none";
+    document.getElementById("triangulo15").style.display = "none";
+};
+
+function verInfoCard15(){
+    document.getElementById("libros5").style.display = "flex";
+    document.getElementById("libro13").style.display = "none";
+    document.getElementById("libro14").style.display = "none";
+    document.getElementById("libro15").style.display = "flex";
+    document.getElementById("triangulo15").style.display = "flex";
+    document.getElementById("triangulo13").style.display = "none";
+    document.getElementById("triangulo14").style.display = "none";
+};
+
+function verInfoCard16(){
+    document.getElementById("libros6").style.display = "flex";
+    document.getElementById("libro16").style.display = "flex";
+    document.getElementById("libro17").style.display = "none";
+    document.getElementById("libro18").style.display = "none";
+    document.getElementById("triangulo16").style.display = "flex";
+    document.getElementById("triangulo17").style.display = "none";
+    document.getElementById("triangulo18").style.display = "none";
+};
+
+function verInfoCard17(){
+    document.getElementById("libros6").style.display = "flex";
+    document.getElementById("libro16").style.display = "none";
+    document.getElementById("libro17").style.display = "flex";
+    document.getElementById("libro18").style.display = "none";
+    document.getElementById("triangulo17").style.display = "flex";
+    document.getElementById("triangulo16").style.display = "none";
+    document.getElementById("triangulo18").style.display = "none";
+};
+
+function verInfoCard18(){
+    document.getElementById("libros6").style.display = "flex";
+    document.getElementById("libro16").style.display = "none";
+    document.getElementById("libro17").style.display = "none";
+    document.getElementById("libro18").style.display = "flex";
+    document.getElementById("triangulo18").style.display = "flex";
+    document.getElementById("triangulo16").style.display = "none";
+    document.getElementById("triangulo17").style.display = "none";
+};
+
+
+function cerrar(){
+    document.getElementById("libros").style.display = "none";
+    document.getElementById("triangulo1").style.display = "none";
+    document.getElementById("triangulo2").style.display = "none";
+    document.getElementById("triangulo3").style.display = "none";
+    document.getElementById("libros2").style.display = "none";
+    document.getElementById("triangulo4").style.display = "none";
+    document.getElementById("triangulo5").style.display = "none";
+    document.getElementById("triangulo6").style.display = "none";
+    document.getElementById("libros3").style.display = "none";
+    document.getElementById("triangulo7").style.display = "none";
+    document.getElementById("triangulo8").style.display = "none";
+    document.getElementById("triangulo9").style.display = "none";
+    document.getElementById("libros4").style.display = "none";
+    document.getElementById("triangulo10").style.display = "none";
+    document.getElementById("triangulo11").style.display = "none";
+    document.getElementById("triangulo12").style.display = "none";
+    document.getElementById("libros5").style.display = "none";
+    document.getElementById("triangulo13").style.display = "none";
+    document.getElementById("triangulo14").style.display = "none";
+    document.getElementById("triangulo15").style.display = "none";
+    document.getElementById("libros6").style.display = "none";
+    document.getElementById("triangulo16").style.display = "none";
+    document.getElementById("triangulo17").style.display = "none";
+    document.getElementById("triangulo18").style.display = "none";
+};
 
 
 

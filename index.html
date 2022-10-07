@@ -48,33 +48,36 @@
         <h2><a name="fantasia" href="#">Fantasía</a></h2>
         <div class="container">
             <!--Card 1-->
-            <div class="card fantasia" id="card1">
+            <div class="card fantasia">
               <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/681831.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
                 <h5 class="card-title">Los hijos del rey</h5>
                 <p class="card-text" id="card-text">$3750</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" id="btn-ver1" onclick="verInfoCard()">Ver más</button>
               </div>
+              <div class="triangulo" id="triangulo1"></div>
             </div>
 
             <!--Card 2-->
-            <div class="card fantasia" id="card2">
+            <div class="card fantasia">
               <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/695822.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
                 <h5 class="card-title">El rey oscuro</h5>
                 <p class="card-text">$3490</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" id="btn-ver2" onclick="verInfoCard2()">Ver más</button>
               </div>
+              <div class="triangulo" id="triangulo2"></div>
             </div>
 
             <!--Card 3-->
-            <div class="card fantasia" id="card3">
+            <div class="card fantasia">
               <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693343.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
                 <h5 class="card-title">El hechizo del agua</h5>
                 <p class="card-text">$4200</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" id="btn-ver3" onclick="verInfoCard3()">Ver más</button>
               </div>
+              <div class="triangulo" id="triangulo3"></div>
             </div>
 
             <div class="card information fantasia desaparecer" id="libros">
@@ -82,7 +85,7 @@
               <div class="prueba" id="libro1">
                 <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/681831.jpg">
                 <div class="card-content">
-                  <div class="btn-cerrar"><button id="btn-cerrar"><b>X</b></button></div>
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Asesino de brujas 2</h3></div>
                   <div class="card-information-text">
                     <p class="text-card"><b>Autor: </b>Shelby Mahurin</p>
@@ -98,14 +101,14 @@
               <div class="prueba" id="libro2">
                 <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/695822.jpg">
                 <div class="card-content">
-                  <div class="btn-cerrar"><button id="btn-cerrar"><b>X</b></button></div>
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>El rey oscuro</h3></div>
                   <div class="card-information-text">
                     <p class="text-card"><b>Autor: </b>PACAT, C.S.</p>
                     <p class="text-card"><b>Nro. de páginas: </b>448</p>
                     <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
-                    <p class="subtitle-content">Will, un joven de dieciséis años que trabaja en el puerto; está huyendo; perseguido por los hombres que mataron a su madre. Luego, un viejo sirviente le revela que su destino es luchar junto a los Guardianes; quienes han jurado proteger a la humanidad si el Rey Oscuro alguna vez regresa. Will se ve inmerso en un mundo de magia; donde empieza a entrenar para desempeñar un papel fundamental en la batalla que se avecina contra la Oscuridad. Will deberá apoyar a los últimos héroes de la Luz para evitar que el destino que destruyó su mundo regrese para destruir el suyo.</p>
+                    <p class="subtitle-content">Will, un joven de dieciséis años que trabaja en el puerto; está huyendo; perseguido por los hombres que mataron a su madre. Luego, un viejo sirviente le revela que su destino es luchar junto a los Guardianes. Will se ve inmerso en un mundo de magia; donde empieza a entrenar para desempeñar un papel fundamental en la batalla que se avecina contra la Oscuridad. Will deberá apoyar a los últimos héroes de la Luz para evitar que el destino que destruyó su mundo regrese para destruir el suyo.</p>
                     <button class="btn-comprar">Comprar</button>
                   </div>
                 </div>
@@ -114,7 +117,7 @@
               <div class="prueba" id="libro3">
                 <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693343.jpg">
                 <div class="card-content">
-                  <div class="btn-cerrar"><button id="btn-cerrar"><b>X</b></button></div>
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>El hechizo del agua</h3></div>
                   <div class="card-information-text">
                     <p class="text-card"><b>Autor: </b>Florencia Bonelli</p>
@@ -130,12 +133,13 @@
 
             <!--Card 4-->
             <div class="card fantasia">
-              <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/697553.jpg" alt="Card image cap" height="270px">
+              <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698513.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
-                <h5 class="card-title">Una sombra en las brasas</h5>
-                <p class="card-text">$3790</p>
-                <button class="btn-ver">Ver más</button>
+                <h5 class="card-title">Hejeres de Dune</h5>
+                <p class="card-text">$4000</p>
+                <button class="btn-ver" id="btn-ver4" onclick="verInfoCard4()">Ver más</button>
               </div>
+              <div class="triangulo2" id="triangulo4"></div>
             </div>
 
             <!--Card 5-->
@@ -144,8 +148,9 @@
               <div class="card-body">
                 <h5 class="card-title">Sol de medianoche</h5>
                 <p class="card-text">$6750</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" id="btn-ver5" onclick="verInfoCard5()">Ver más</button>
               </div>
+              <div class="triangulo2" id="triangulo5"></div>
             </div>
 
             <!--Card 6-->
@@ -154,40 +159,147 @@
               <div class="card-body">
                 <h5 class="card-title">El bosque</h5>
                 <p class="card-text">$3250</p>
-                <button class="btn-ver">Ver más</a>
+                <button class="btn-ver" id="btn-ver6" onclick="verInfoCard6()">Ver más</a></button>
               </div>
+              <div class="triangulo2" id="triangulo6"></div>
             </div>
         </div>
+
+        
+        <div class="card information fantasia" id="libros2">
+          <div class="prueba" id="libro4">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698513.jpg">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title"><h3>Hejeres de Dune</h3></div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Autor: </b>Frank Herbert</p>
+                <p class="text-card"><b>Nro. de páginas: </b>568</p>
+                <p class="text-card"><b>Fecha de publicación: </b>2022</p>
+                <h4 class="subtitle-card">Sipnósis</h4>
+                <p class="subtitle-content">La saga Dune es la cumbre de la ciencia ficción contemporánea. Esta quinta entrega de la serie prosigue con las aventuras de la estirpe de los Atreides en el fascinante planeta de arena. Nos hallamos en el futuro respecto a la acción de Dios emperador de Dune. La expansión galáctica que siguió a la muerte de Leto ha terminado. Todos regresan al planeta madre; convertido de nuevo en el mundo inhóspito y seco de sus orígenes. El delicado equilibrio entre las antiguas fuerzas está a punto de romperse.</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prueba" id="libro5">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/677881.jpg">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title"><h3>Sol de medianoche</h3></div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Autor: </b>Stephenie Meyer</p>
+                <p class="text-card"><b>Nro. de páginas: </b>800</p>
+                <p class="text-card"><b>Fecha de publicación: </b>2020</p>
+                <h4 class="subtitle-card">Sipnósis</h4>
+                <p class="subtitle-content">Cuando Edward Cullen y Bella Swan se conocieron en Crepúsculo; nació una historia de amor icónica. Pero hasta ahora; sus fans solo conocen la historia a través de Bella. Por fin los lectores podrán vivir la versión de Edward en la muy esperada novela Sol de medianoche. La inolvidable historia; contada a través de los ojos de Edward, toma un cariz nuevo y definitivamente oscuro. Conocer a Bella es lo más perturbador e intrigante que le ha sucedido en todos sus años como vampiro.</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="prueba" id="libro6">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/694284.jpg">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title"><h3>El bosque de los corazones dormidos</h3></div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Autor: </b>Esther Sanz</p>
+                <p class="text-card"><b>Nro. de páginas: </b>320</p>
+                <p class="text-card"><b>Fecha de publicación: </b>2022</p>
+                <h4 class="subtitle-card">Sipnósis</h4>
+                <p class="subtitle-content">Primera parte de la trilogía El bosque; un romance paranormal para todos los corazones dormidos. La vida de Clara; una adolescente de diecisiete años, cambia de un momento a otro al morir su abuela. Sin otros familiares cercanos, debe dejar Barcelona y mudarse a Colmenar, un pequeño pueblo donde reside el único pariente vivo que le queda: su tío Álvaro. Lejos de su casa y de sus amigos, deberá adaptarse a un nuevo sitio en el que siente una presencia extraña y oye ruidos escalofriantes por la noche.</p>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
           <h2><a name="romance" class="mb" href="#">Romance</a></h2>
           <div class="container">
             <!--Card 7-->
-            <div class="card">
+            <div class="card romance">
               <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/664706.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
                 <h5 class="card-title">Orgullo y prejuicio</h5>
-                <p class="card-text">2400</p>
-                <button class="btn-ver">Ver más</button>
+                <p class="card-text">$2400</p>
+                <button class="btn-ver" onclick="verInfoCard7()">Ver más</button>
               </div>
+              <div class="triangulo3" id="triangulo7"></div>
             </div>
           
             <!--Card 8-->
-            <div class="card">
-              <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/684043.jpg" alt="Card image cap" height="270px">
+            <div class="card romance">
+              <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683283.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
-                <h5 class="card-title">Todo lo que nunca fuimos</h5>
-                <p class="card-text">$3500</p>
-                <button class="btn-ver">Ver más</button>
+                <h5 class="card-title">Un cuento perfecto</h5>
+                <p class="card-text">$6750</p>
+                <button class="btn-ver" onclick="verInfoCard8()">Ver más</button>
               </div>
+              <div class="triangulo3" id="triangulo8"></div>
             </div>
 
             <!--Card 9-->
-            <div class="card">
+            <div class="card romance">
               <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693830.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
                 <h5 class="card-title">El último verano</h5>
                 <p class="card-text">$3500</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard9()">Ver más</button>
+              </div>
+              <div class="triangulo3" id="triangulo9"></div>
+            </div>
+
+            <div class="card information romance desaparecer" id="libros3">
+              <div class="prueba" id="libro7">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/664706.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>Orgullo y prejuicio</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Jane Austen</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>360</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2019</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">"Si la auténtica prueba para juzgar la calidad de una novela es la relectura, y los placeres que aporta la relectura, entonces Orgullo y prejuicio supera cualquier novela jamás escrita", Harold Bloom.</p> 
+                    <p class="subtitle-content parrafo2">"Es una verdad universalmente aceptada que un hombre soltero en posesión de una notable fortuna necesita una esposa".</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="prueba" id="libro8">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683283.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>Un cuento perfecto</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Elisabet Benavent</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>640</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">Érase una vez una mujer que lo tenía todo y un chico que no tenía nada. Érase una vez una historia de amor entre el éxito y la duda. Érase una vez un cuento perfecto. Elísabet Benavent, regresa al panorama de la literatura con una novela que explora el significado del éxito en la vida y reflexiona con ironía y humor acerca de las imposiciones sociales; la presión del grupo y la autoexigencia que; aunque cueste creerlo; no es sinónimo de felicidad. Los lectores han dicho... «¡Un libro magnífico. Adictivo! Una historia real, bien escrita.</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="prueba" id="libro9">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693830.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>El último verano</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Ana K. Franco</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>432</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2022</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">AALIYAH es una gimnasta que sueña con una vida mejor y que hará todo lo que sea necesario para alcanzarla. SHAWN es un alma sensible que pronto irá a la universidad para convertirse en escritor. Primero pasará unas vacaciones en la playa con sus amigos. Allí van a encontrarse y entre atardeceres; sonrisas y palabras que jamás creyeron ser capaces de decir, sentirán que se conocen desde siempre. Pero el destino torcerá sus planes y su romance de verano les dejará las heridas más profundas.</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -197,8 +309,9 @@
               <div class="card-body">
                 <h5 class="card-title">Bajo la misma estrella</h5>
                 <p class="card-text">$4100</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard10()">Ver más</button>
               </div>
+              <div class="triangulo4" id="triangulo10"></div>
             </div>
 
             <!--Card 11-->
@@ -207,8 +320,9 @@
               <div class="card-body">
                 <h5 class="card-title">Nosotros en la luna</h5>
                 <p class="card-text">$3500</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard11()">Ver más</button>
               </div>
+              <div class="triangulo4" id="triangulo11"></div>
             </div>
           
             <!--Card 12-->
@@ -217,7 +331,59 @@
               <div class="card-body">
                 <h5 class="card-title">Anne sin filtros</h5>
                 <p class="card-text">$3750</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard12()">Ver más</button>
+              </div>
+              <div class="triangulo4" id="triangulo12"></div>
+            </div>
+          </div>
+
+          <div class="card information romance desaparecer" id="libros4">
+            <div class="prueba" id="libro10">
+              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/569815.jpg">
+              <div class="card-content">
+                <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                <div class="card-information-title"><h3>Bajo la misma estrella</h3></div>
+                <div class="card-information-text">
+                  <p class="text-card"><b>Autor: </b>John Green</p>
+                  <p class="text-card"><b>Nro. de páginas: </b>304</p>
+                  <p class="text-card"><b>Fecha de publicación: </b>2013</p>
+                  <h4 class="subtitle-card">Sipnósis</h4>
+                  <p class="subtitle-content">Emotiva; irónica y afilada. Una novela teñida de humor y de tragedia que habla de nuestra capacidad para soñar incluso en las circunstancias más difíciles. A Hazel y a Gus les gustaría tener vidas más corrientes. Algunos dirían que no han nacido con estrella, que su mundo es injusto. Hazel y Gus son solo adolescentes; pero si algo les ha enseñado el cáncer que ambos padecen es que no hay tiempo para lamentaciones, porque nos guste o no, solo existe el hoy y el ahora. </p>
+                  <button class="btn-comprar">Comprar</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="prueba" id="libro11">
+              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/686658.jpg">
+              <div class="card-content">
+                <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                <div class="card-information-title"><h3>Nosotros en la luna</h3></div>
+                <div class="card-information-text">
+                  <p class="text-card"><b>Autor: </b>Alice Kellen</p>
+                  <p class="text-card"><b>Nro. de páginas: </b>480</p>
+                  <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                  <h4 class="subtitle-card">Sipnósis</h4>
+                  <p class="subtitle-content">Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre emails llenos de confidencias, dudas e inquietudes.  Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación? </p>
+                  <button class="btn-comprar">Comprar</button>
+                </div>
+              </div>
+            </div>
+          
+            <div class="prueba" id="libro12">
+              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/687505.jpg">
+              <div class="card-content">
+                <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                <div class="card-information-title"><h3>Anne sin filtros</div>
+                <div class="card-information-text">
+                  <p class="text-card"><b>Autor: </b>M. PASCUAL, SELENE / G. PARENTE, IRIA</p>
+                  <p class="text-card"><b>Nro. de páginas: </b>384</p>
+                  <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                  <h4 class="subtitle-card">Sipnósis</h4>
+                  <p class="subtitle-content">Anne Shirley siempre ha querido ser escritora, y aunque nadie lo sepa, lo es: online la conocen como Lady Cordelia y sus historias sobre El caballero del espejo, una de las series más famosas de los últimos tiempos; son de las más leídas de la red. Sólo Diana, su mejor amiga; artista y colaboradora, conoce el secreto de su doble identidad. Anne está acostumbrada a esa vida hasta que aparece Blythe, un nuevo autor que de la noche a la mañana supera su récord de lecturas y que; para colmo, no tiene ningún reparo en mostrar su identidad.
+                  </p>
+                  <button class="btn-comprar">Comprar</button>
+                </div>
               </div>
             </div>
           </div>
@@ -225,13 +391,14 @@
         <h2 class="mb"><a name="terror" href="#">Terror</a></h2>
         <div class="container">
             <!--Card 13-->
-            <div class="card">
-              <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/688265.jpg" alt="Card image cap" height="270px">
+            <div class="card terror">
+              <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/684792.jpg" alt="Card image cap" height="270px">
               <div class="card-body">
-                <h5 class="card-title">El club de los psicopatas</h5>
+                <h5 class="card-title">Después</h5>
                 <p class="card-text">$6300</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard13()">Ver más</button>
               </div>
+              <div class="triangulo5" id="triangulo13"></div>
             </div>
           
             <!--Card 14-->
@@ -240,8 +407,9 @@
               <div class="card-body">
                 <h5 class="card-title">El instituto</h5>
                 <p class="card-text">$5350</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard14()">Ver más</button>
               </div>
+              <div class="triangulo5" id="triangulo14"></div>
             </div>
           
             <!--Card 15-->
@@ -250,7 +418,58 @@
               <div class="card-body">
                 <h5 class="card-title">La sangre manda</h5>
                 <p class="card-text">$6300</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard15()">Ver más</button>
+              </div>
+              <div class="triangulo5" id="triangulo15"></div>
+            </div>
+
+            <div class="card information terror desaparecer" id="libros5">
+              <div class="prueba" id="libro13">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/684792.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>Después</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Stephen King</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>248</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal. Sin embargo, nació con una habilidad sobrenatural que su madre le insta a mantener en secreto y que le permite ver aquello que nadie puede y enterarse de lo que el resto del mundo ignora. Cuando una inspectora del Departamento de Policía de Nueva York le obliga a evitar el último atentado de un asesino que amenaza con seguir atacando incluso desde la tumba, Jamie no tardará en descubrir el precio que debe pagar por su poder. </p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="prueba" id="libro14">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683274.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>El instituto</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Stephen King</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>624</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">En mitad de la noche en un barrio tranquilo de Minneapolis raptan a Luke Ellis, de doce años; tras haber asesinado a sus padres. Una operación que dura menos de dos minutos. Luke se despierta en la siniestra institución conocida como el Instituto, en un cuarto que se asemeja al suyo pero sin ventanas. En habitaciones parecidas hay más niños: Kalisha, Nick, George, Iris y Avery Dixon; entre otros, que comparten capacidades especiales como la telequinesia o la telepatía.</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="prueba" id="libro15">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/676948.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>La sangre manda</div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Stephen King</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>464</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2020</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">Cuanto más sangrienta y violenta es una noticia, más llama la atención de la gente: «La sangre manda». Así reza la máxima periodística que hará que Holly Gibney, la detective a la que Bill Hodges legó su agencia Finders Keepers, y uno de los personajes más queridos por los fans de Stephen King, se interese por la matanza en el instituto Albert Macready y acabe enganchada a las noticias. En esta ocasión deberá luchar contra lo que más teme...; protagoniza su primer gran caso en solitario.</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
               </div>
             </div>
           
@@ -260,8 +479,9 @@
               <div class="card-body">
                 <h5 class="card-title">Cuento de hadas</h5>
                 <p class="card-text">$9000</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard16()">Ver más</button>
               </div>
+              <div class="triangulo6" id="triangulo16"></div>
             </div>
           
           <!--Card 17-->
@@ -270,8 +490,9 @@
               <div class="card-body">
                 <h5 class="card-title">La milla verde</h5>
                 <p class="card-text">$4450</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard17()">Ver más</button>
               </div>
+              <div class="triangulo6" id="triangulo17"></div>
             </div>
           
             <!--Card 18-->
@@ -280,7 +501,59 @@
               <div class="card-body">
                 <h5 class="card-title">Carrie</h5>
                 <p class="card-text">$4900</p>
-                <button class="btn-ver">Ver más</button>
+                <button class="btn-ver" onclick="verInfoCard18()">Ver más</button>
+              </div>
+              <div class="triangulo6" id="triangulo18"></div>
+            </div>
+
+            <div class="card information terror" id="libros6">
+              <div class="prueba" id="libro16">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698715.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>Cuento de hadas</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Stephen King</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>856</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2022</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">Estoy seguro de que puedo contar esta historia. También estoy seguro de que nadie se la creerá. Eso me da igual. Me basta con contarla. Para mí, está claro que para muchos escritores, no solo los novatos como yo, el problema es decidir por dónde empezar. (...) Y ahora, mientras pienso en esas cosas, veo un claro hilo que conduce a lo largo de los años hasta el señor Bowditch y el cobertizo cerrado con candado detrás de su vieja y ruinosa casa victoriana. </p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+                <div class="triangulo6" id="triangulo18"></div>
+              </div>
+    
+              <div class="prueba" id="libro17">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/690506.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>La milla verde</h3></div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Stephen King</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>624</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">En mitad de la noche en un barrio tranquilo de Minneapolis raptan a Luke Ellis, de doce años; tras haber asesinado a sus padres. Una operación que dura menos de dos minutos. Luke se despierta en la siniestra institución conocida como el Instituto, en un cuarto que se asemeja al suyo pero sin ventanas. En habitaciones parecidas hay más niños: Kalisha, Nick, George, Iris y Avery Dixon; entre otros, que comparten capacidades especiales como la telequinesia o la telepatía.</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="prueba" id="libro18">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/688252.jpg">
+                <div class="card-content">
+                  <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+                  <div class="card-information-title"><h3>Carrie</div>
+                  <div class="card-information-text">
+                    <p class="text-card"><b>Autor: </b>Stephen King</p>
+                    <p class="text-card"><b>Nro. de páginas: </b>256</p>
+                    <p class="text-card"><b>Fecha de publicación: </b>2021</p>
+                    <h4 class="subtitle-card">Sipnósis</h4>
+                    <p class="subtitle-content">Puede que Carrie White no sea la chica más popular del colegio, pero tiene un poder único. Carrie es capaz de mover cosas con su mente. Las puertas se cierran. Las velas caen. Es su poder y su tragedia. Entonces, un acto de bondad, tan espontáneo como las constantes burlas de sus compañeros de clase, ofrece a Carrie la oportunidad de convertirse en alguien normal hasta que una inesperada crueldad transforma su don en un arma de horror y destrucción que nadie podrá olvidar jamás.</p>
+                    <button class="btn-comprar">Comprar</button>
+                  </div>
+                </div>
               </div>
             </div>
         </div>

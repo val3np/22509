@@ -247,8 +247,9 @@ h2 a{
     background-color: rgb(11, 94, 215);
 }
   
+/*Información Cards*/
 
-.fantasia:nth-child(4){
+.fantasia:nth-child(4), .fantasia:nth-child(8), .romance:nth-child(4), .romance:nth-child(8), .terror:nth-child(4), .terror:nth-child(8){
     grid-column-start : span 3;
 }
 
@@ -256,6 +257,11 @@ h2 a{
   height: 26.2rem;
   width: 95%;
   padding: 2rem;
+  z-index: 10;
+}
+
+#libros2, #libros4{
+    margin-top: 4rem;
 }
 
 .desaparecer{
@@ -279,6 +285,7 @@ h2 a{
 .card-content{
   width: 100%;
 }
+
 .btn-cerrar button{
   float: right;
   position: relative;
@@ -293,7 +300,8 @@ h2 a{
   outline: none;
   background-color: #fff;
   border: none;
-}
+} 
+
 .card-information-title{
   font-size: 1.3rem;
   height: 2.5rem;
@@ -325,11 +333,9 @@ h2 a{
   padding-right: 1rem;
 }
 
-.linea{
-  background-color: #f0f0f0;
-  margin: 1rem 0;
-  width: 94%;
-}
+ .parrafo2{
+    margin-top: 1rem;
+ }
 
 .btn-comprar{
     float: right;
@@ -337,10 +343,61 @@ h2 a{
     margin-top: 0.5rem;
 }
 
-#libro2, #libro3{
+.triangulo, .triangulo2, .triangulo3, .triangulo4, .triangulo5, .triangulo6{
+    border-top: 2rem solid rgba(0, 0, 0, 0.25);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    width: 0;
+    height: 0;
+    position: relative;
+    display: none;
+    top: 9rem;
+}
+
+#triangulo1, #triangulo4, #triangulo9, #triangulo15, #triangulo16{
+    right: 3rem;
+}
+
+#triangulo2{
+    right: 1rem;
+}
+
+#triangulo3, #triangulo7, #triangulo8{
+    right: 4.3rem;
+}
+
+#triangulo5{
+    right: 4rem;
+}
+
+#triangulo6, #triangulo13{
+    left: 1rem;
+}
+
+#triangulo10{
+    right: 6rem;
+}
+
+#triangulo11{
+    right: 5rem;
+}
+
+#triangulo12{
+    right: 2rem;
+}
+
+#triangulo17{
+    right: 1.2rem;
+}
+
+#triangulo18{
+    left: 1.7rem;
+}
+
+
+#libro5, #libro6, #libro8, #libro9, #libro11, #libro12, #libro14, #libro15, #libro17, #libro18{
     display: none;
 }
-  
 
 /*------------------------------------------------------------Contacto--------------------------------------------------------------------------*/
 /* Comienzo del formulario */
@@ -708,6 +765,33 @@ span{
         grid-template-rows:  2fr;
         justify-content: space-evenly;
     }
+
+    /*Información card*/
+    .fantasia:nth-child(3){
+        grid-column-start : span 2;
+    }
+    .information{
+        height: auto;
+    }
+
+    .prueba{
+        flex-direction: column;
+    }
+
+    .btn-cerrar button{
+        top: -16rem;
+        left: 1.2rem;
+      } 
+
+    .img-card{
+        width: 12rem;
+        height: 15rem;
+        margin-left: 8.5rem;
+    }
+    
+    .btn-comprar{
+        margin-top: 1rem;
+    }
     /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
     .text{
         width: 75%;
@@ -809,6 +893,68 @@ span{
         grid-template-columns: 1fr;
         grid-template-rows:  4fr;
         justify-content: center;
+    }
+
+    /*Información card*/
+    .fantasia:nth-child(2){
+        grid-column-start : span 1;
+    }
+    .information{
+        height: auto;
+    }
+
+    .prueba{
+        flex-direction: column;
+    }
+
+    .btn-cerrar button{
+        top: -16rem;
+        left: 1.2rem;
+      } 
+
+    .img-card{
+        width: 12rem;
+        height: 15rem;
+        margin-left: 2rem;
+    }
+    
+    .btn-comprar{
+        margin-top: 1rem;
+    }
+
+    .triangulo, .triangulo2, .triangulo3, .triangulo4, .triangulo5, .triangulo6{
+        border: transparent;
+    }
+
+    .information{
+        position: absolute;
+        width: 20rem;
+    }
+
+    #libros{
+        top: 50rem;
+    }
+
+    #libros2{
+        top: 130rem;
+        left: 1.1rem;
+    }
+
+    #libros3{
+        top: 225rem;
+    }
+
+    #libros4{
+        top: 305rem;
+        left: 1.1rem;
+    }
+
+    #libros5{
+        top: 402rem;
+    }
+
+    #libros6{
+        top: 485rem;
     }
 
     /*----------------------------------------------------Formulario---------------------------------------------------------------------*/
