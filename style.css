@@ -171,7 +171,6 @@ h2 a{
 }
 
 
-
 .cards{
     margin: 2rem 13rem;
 }
@@ -331,6 +330,7 @@ h2 a{
   width: 94%;
   margin-left: 2rem;
   padding-right: 1rem;
+  text-align: justify;
 }
 
  .parrafo2{
@@ -605,6 +605,32 @@ span{
     box-shadow:  0rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5)
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1474px) {
+    /*----------------------------------------------------------------------Inicio-----------------------------------------------------------*/
+    /*Informaión cards*/
+
+    .card-content{
+        position: relative;
+        bottom: 2.6rem;
+    }
+
+    .btn-cerrar button{
+        top: 1.5rem;
+        left: 1.4rem;
+    }
+
+    .text-card{
+        font-size: 0.95rem;
+    }
+
+    .subtitle-content{
+        font-size: 0.95rem;
+    }
+
+    .btn-comprar{
+        margin-top: 0;
+    }
+}
 
     @media (max-width: 1248px) {
 
@@ -651,7 +677,7 @@ span{
         }
     }
 
-@media (max-width: 992px) {
+@media (max-width: 993px) {
 
     header{
         display: flex;
@@ -767,8 +793,85 @@ span{
     }
 
     /*Información card*/
-    .fantasia:nth-child(3){
-        grid-column-start : span 2;
+    .information{
+        height: auto;
+        width: 40rem;
+        position: absolute;
+    }
+
+    .prueba{
+        flex-direction: column;
+    }
+
+    .card-content{
+        top: 1rem;
+    }
+
+    .btn-cerrar button{
+        top: -16rem;
+        left: 1.2rem;
+      } 
+
+    .img-card{
+        width: 12rem;
+        height: 15rem;
+        margin-left: 11.5rem;
+    }
+
+    .subtitle-content{
+        margin-left: 0.9rem;
+    }
+    
+    .btn-comprar{
+        margin-top: 1rem;
+    }
+
+    .triangulo, .triangulo2, .triangulo3, .triangulo4, .triangulo5, .triangulo6{
+        border: transparent;
+    }
+
+    #libros{
+        top: 50rem;
+    }
+
+    #libros2{
+        top: 75rem;
+        left: 11rem;
+    }
+
+    #libros3{
+        top: 140rem;
+    }
+
+    #libros4{
+        top: 165rem;
+        left: 11rem;
+    }
+
+    #libros5{
+        top: 230rem;
+    }
+
+    #libros6{
+        top: 260rem;
+    }
+    /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
+    .text{
+        width: 75%;
+        margin: 0 10rem;
+    }
+    /*------------------------------------------------------------Contacto-------------------------------------------------------------------*/
+    .form{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 769px){
+    /*-----------------------------------------------------------Inicio-----------------------------------------------------------------------*/
+      /*Información card*/
+      .fantasia:nth-child(2){
+        grid-column-start : span 1;
     }
     .information{
         height: auto;
@@ -786,25 +889,49 @@ span{
     .img-card{
         width: 12rem;
         height: 15rem;
-        margin-left: 8.5rem;
+        margin-left: 2rem;
     }
     
     .btn-comprar{
         margin-top: 1rem;
     }
-    /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
-    .text{
-        width: 75%;
-        margin: 0 10rem;
-    }
-    /*------------------------------------------------------------Contacto-------------------------------------------------------------------*/
-    .form{
-        padding: 0;
-        margin: 0;
-    }
-}
 
-@media (max-width: 769px){
+
+    .information{
+        position: absolute;
+        width: 20rem;
+    }
+
+    #libros4 .card-information-title{
+        font-size: 1.2rem;
+    }
+
+    #libros{
+        top: 50rem;
+    }
+
+    #libros2{
+        top: 130rem;
+        left: 11rem;
+    }
+
+    #libros3{
+        top: 225rem;
+    }
+
+    #libros4{
+        top: 305rem;
+        left: 11rem;
+    }
+
+    #libros5{
+        top: 402rem;
+    }
+
+    #libros6{
+        top: 485rem;
+    }
+
     /*------------------------------------------------------------Somos-----------------------------------------------------------------------*/
     .img-somos{
         margin: 3rem 0;
@@ -896,65 +1023,30 @@ span{
     }
 
     /*Información card*/
-    .fantasia:nth-child(2){
-        grid-column-start : span 1;
-    }
-    .information{
-        height: auto;
-    }
-
-    .prueba{
-        flex-direction: column;
-    }
-
-    .btn-cerrar button{
-        top: -16rem;
-        left: 1.2rem;
-      } 
-
-    .img-card{
-        width: 12rem;
-        height: 15rem;
-        margin-left: 2rem;
-    }
-    
-    .btn-comprar{
-        margin-top: 1rem;
-    }
-
-    .triangulo, .triangulo2, .triangulo3, .triangulo4, .triangulo5, .triangulo6{
-        border: transparent;
-    }
-
-    .information{
-        position: absolute;
-        width: 20rem;
-    }
-
     #libros{
         top: 50rem;
     }
 
     #libros2{
-        top: 130rem;
-        left: 1.1rem;
+        top: 75rem;
+        left: 11rem;
     }
 
     #libros3{
-        top: 225rem;
+        top: 140rem;
     }
 
     #libros4{
-        top: 305rem;
-        left: 1.1rem;
+        top: 165rem;
+        left: 11rem;
     }
 
     #libros5{
-        top: 402rem;
+        top: 230rem;
     }
 
     #libros6{
-        top: 485rem;
+        top: 260rem;
     }
 
     /*----------------------------------------------------Formulario---------------------------------------------------------------------*/
