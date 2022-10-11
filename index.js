@@ -51,7 +51,6 @@ form.addEventListener('submit', btnSubmit);
             return;
         }
 
-
         if (pais.length == 0 || nombre.length === ''){
             alert("Debe ingresar su país");
             return;
@@ -69,7 +68,19 @@ form.addEventListener('submit', btnSubmit);
    
         if (response.ok){
             this.reset();
-            alert('Gracias contactarnos, pronto tendrás una respuesta');
+            Toastify({
+                text: "Gracias contactarnos, pronto tendrás una respuesta",
+                duration: 3000,
+                destination: "index.html",
+                newWindow: true,
+                gravity: "top", 
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                  background: "linear-gradient(to right, #E9EBEE, #4267B3)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
             
     } 
 };
@@ -317,6 +328,20 @@ function cerrar(){
     document.getElementById("triangulo18").style.display = "none";
 };
 
-
+function compraLibro(){
+    Toastify({
+        text: "Has comprado este libro!",
+        duration: 3000,
+        destination: "https://facebook.com",
+        newWindow: true,
+        close: true,
+        gravity: "top", 
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+      }).showToast();
+}
 
 
