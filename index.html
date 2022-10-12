@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="sin fondo.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://kit.fontawesome.com/58ed9529f3.js" crossorigin="anonymous"></script>
     <title>Inicio</title>
 </head>
@@ -13,8 +14,7 @@
   <!--Encabezado-->
     <header>
         <h1><b>TuBook</b></h1>
-
-        <button class="btn-menu" onclick="accion()"><i class="fa-solid fa-bars"></i></button>
+        <button class="btn-menu" onclick="accion()">x<i class="fa-solid fa-bars"></i></button>
     </header>
 
      <!--Navbar-->
@@ -54,6 +54,7 @@
                 <h5 class="card-title">Los hijos del rey</h5>
                 <p class="card-text" id="card-text">$3750</p>
                 <button class="btn-ver" id="btn-ver1" onclick="verInfoCard()">Ver más</button>
+                <button class="btn-ver btn-comprar" onclick="compraLibro()">Comprar</button>
               </div>
               <div class="triangulo" id="triangulo1"></div>
             </div>
@@ -83,7 +84,7 @@
             <div class="card information fantasia desaparecer" id="libros">
 
               <div class="prueba" id="libro1">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/681831.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/681831.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Asesino de brujas 2</h3></div>
@@ -93,13 +94,13 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Lou, Reid, Coco y Ansel huyen no solo del aquelarre, sino también del reino y de la Iglesia. Son fugitivos y no tienen donde ocultarse. Para sobrevivir, necesitan aliados. Y unos muy poderosos. Pero mientras Lou se preocupa cada vez más por salvar a sus seres queridos, se adentra en el lado oscuro de la magia. Y el precio a pagar podría ser la persona a la que más teme perder: Reid. Ellos están unidos por un juramento y solo existe una cosa que puede separarlos: la muerte.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar" onclick="compraLibro()">Comprar</button>
                   </div>
                 </div>
               </div>
 
               <div class="prueba" id="libro2">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/695822.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/695822.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>El rey oscuro</h3></div>
@@ -115,7 +116,7 @@
               </div>
             
               <div class="prueba" id="libro3">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693343.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693343.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>El hechizo del agua</h3></div>
@@ -168,7 +169,7 @@
         
         <div class="card information fantasia desaparecer" id="libros2">
           <div class="prueba" id="libro4">
-            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698513.jpg">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698513.jpg" alt="Card image cap" height="270px">
             <div class="card-content">
               <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
               <div class="card-information-title"><h3>Hejeres de Dune</h3></div>
@@ -184,7 +185,7 @@
           </div>
 
           <div class="prueba" id="libro5">
-            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/677881.jpg">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/677881.jpg" alt="Card image cap" height="270px">
             <div class="card-content">
               <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
               <div class="card-information-title"><h3>Sol de medianoche</h3></div>
@@ -200,7 +201,7 @@
           </div>
         
           <div class="prueba" id="libro6">
-            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/694284.jpg">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/694284.jpg" alt="Card image cap" height="270px">
             <div class="card-content">
               <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
               <div class="card-information-title"><h3>El bosque</h3></div>
@@ -254,7 +255,7 @@
 
             <div class="card information romance desaparecer" id="libros3">
               <div class="prueba" id="libro7">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/664706.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/664706.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Orgullo y prejuicio</h3></div>
@@ -271,7 +272,7 @@
               </div>
     
               <div class="prueba" id="libro8">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683283.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683283.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Un cuento perfecto</h3></div>
@@ -287,7 +288,7 @@
               </div>
             
               <div class="prueba" id="libro9">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693830.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/693830.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>El último verano</h3></div>
@@ -339,7 +340,7 @@
 
           <div class="card information romance desaparecer" id="libros4">
             <div class="prueba" id="libro10">
-              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/569815.jpg">
+              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/569815.jpg" alt="Card image cap" height="270px">
               <div class="card-content">
                 <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                 <div class="card-information-title"><h3>Bajo la misma estrella</h3></div>
@@ -355,7 +356,7 @@
             </div>
   
             <div class="prueba" id="libro11">
-              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/686658.jpg">
+              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/686658.jpg" alt="Card image cap" height="270px">
               <div class="card-content">
                 <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                 <div class="card-information-title"><h3>Nosotros en la luna</h3></div>
@@ -371,7 +372,7 @@
             </div>
           
             <div class="prueba" id="libro12">
-              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/687505.jpg">
+              <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/687505.jpg" alt="Card image cap" height="270px">
               <div class="card-content">
                 <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                 <div class="card-information-title"><h3>Anne sin filtros</div>
@@ -425,7 +426,7 @@
 
             <div class="card information terror desaparecer" id="libros5">
               <div class="prueba" id="libro13">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/684792.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/684792.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Después</h3></div>
@@ -441,7 +442,7 @@
               </div>
     
               <div class="prueba" id="libro14">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683274.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/683274.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>El instituto</h3></div>
@@ -457,7 +458,7 @@
               </div>
             
               <div class="prueba" id="libro15">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/676948.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/676948.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>La sangre manda</div>
@@ -508,7 +509,7 @@
 
             <div class="card information terror desaparecer" id="libros6">
               <div class="prueba" id="libro16">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698715.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/698715.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Cuento de hadas</h3></div>
@@ -525,7 +526,7 @@
               </div>
     
               <div class="prueba" id="libro17">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/690506.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/690506.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>La milla verde</h3></div>
@@ -541,7 +542,7 @@
               </div>
             
               <div class="prueba" id="libro18">
-                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/688252.jpg">
+                <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/688252.jpg" alt="Card image cap" height="270px">
                 <div class="card-content">
                   <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
                   <div class="card-information-title"><h3>Carrie</div>
@@ -569,7 +570,7 @@
             <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="index.js"></script>
   </body>
 </html>
