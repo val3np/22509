@@ -14,7 +14,8 @@
   <!--Encabezado-->
     <header>
         <h1><b>TuBook</b></h1>
-        <button class="btn-menu" onclick="accion()">x<i class="fa-solid fa-bars"></i></button>
+        <button class="btn-menu icono-i" onclick="accion()"><i class="fa-solid fa-bars"></i></button>
+        <button class="btn-menu icono-x ocultar"onclick="accion()"><i class="fa-solid fa-x"></i></i></button>
     </header>
 
      <!--Navbar-->
@@ -53,8 +54,10 @@
               <div class="card-body">
                 <h5 class="card-title">Los hijos del rey</h5>
                 <p class="card-text" id="card-text">$3750</p>
-                <button class="btn-ver" id="btn-ver1" onclick="verInfoCard()">Ver más</button>
-                <button class="btn-ver btn-comprar" onclick="compraLibro()">Comprar</button>
+                <div class="div-botones">
+                  <button class="btn-ver" id="btn-ver1" onclick="verInfoCard()">Ver más</button>
+                  <button class="btn-ver btn-comprar-card" onclick="compraLibro()">Comprar</button>
+                </div>
               </div>
               <div class="triangulo" id="triangulo1"></div>
             </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Roboto:ital,wght@1,500;1,700&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -24,13 +26,15 @@ header h1{
     font-size: 4rem;
     text-align: center;
     margin-bottom: 1rem;
-    font-family: 'Courier New';
+    font-family: 'Charm';
 }
+
 
 header .btn-menu{
     visibility: hidden;
     position: absolute;
 }
+
 
 .nav{
     display: flex;
@@ -165,6 +169,17 @@ h2{
     background-position: center;
 }
 
+h2:hover{
+    animation: card 2s ease-out;
+}
+
+@keyframes card {
+    0%{transform:rotate(0deg)}
+    25%{transform:rotate(2deg)}
+    50%{transform:rotate(-3deg)}
+    75%{transform:rotate(2deg)}
+    100%{transform:rotate(0deg)}
+}
 
 h2 a{
     text-decoration: none;
@@ -193,10 +208,12 @@ h2 a{
     border-radius: 0.5rem;
     background-color: #ffffff;
     cursor: pointer;
+    
 }
 
 .card:hover{
-    box-shadow:  0rem 0rem 0.6rem rgba(33, 142, 231, 0.5);
+    box-shadow:  0rem 0rem 0.7rem rgba(33, 142, 231, 0.5);
+    transform:scale(1.1,1.1);
 }
 
 .card-img-top{
@@ -243,9 +260,11 @@ h2 a{
     border: none;
 }
 
+
 .btn-ver:hover, .btn-comprar:hover{
     background-color: rgb(11, 94, 215);
 }
+
   
 /*Información Cards*/
 
@@ -683,27 +702,33 @@ span{
     header{
         display: flex;
         background-color: #95b6c4;
-        height: 4rem;
+        height: 4.5rem;
     }
 
 
     header h1{
-        margin: 0 2rem 0 0;
-        justify-content: flex-start;
-        align-self: center;
+        position: relative;
+        bottom: 0.8rem;
         width: 20rem;
         font-size: 3.2rem;
+        align-self: center;
     }
 
     header .btn-menu{
+        margin-top: 0rem;
         visibility: visible;
         position: absolute;
-        top: 1.2rem;
+        top: 1.5rem;
         right: 2rem;
         font-size: 1.5rem;
         background-color: transparent;
         border: none;
         outline: none;
+    }
+
+    header .icono-x{
+        top: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .btn-menu:hover{
@@ -715,7 +740,7 @@ span{
         margin: 0;
         position: absolute;
         top: 4rem;
-        right: 3rem;
+        right: 1rem;
         width: 13rem;
         background-color: rgb(235, 226, 226);
         border-radius: 0.5rem;
@@ -980,6 +1005,12 @@ span{
     header h1{
         font-size: 3rem;
         margin-top: 0.3rem;
+        bottom: 0.4rem;
+    }
+
+    header .icono-x{
+        top: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .footer{

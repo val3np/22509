@@ -1,16 +1,27 @@
 //Para abrir y cerrar el menú
 
 function accion(){
+    let prueba = document.getElementsByClassName("btn-menu");
+    for(let i = 0; i < prueba.length; i++){
+        prueba[i].classList.toggle('ocultar');
+    }
     let ancla = document.getElementsByClassName('nav_ul');
     for(let i = 0; i < ancla.length; i++){
         ancla[i].classList.toggle('ocultar');
-    }}
+    }
+
+}
 
 function acciones(){
     let enlace = document.getElementsByClassName('nav_ul');
     for(let i = 0; i < enlace.length; i++){
         enlace[i].classList.toggle('ocultar');
-    }}
+    }
+    let prueba = document.getElementsByClassName("btn-menu");
+    for(let i = 0; i < prueba.length; i++){
+        prueba[i].classList.toggle('ocultar');
+    }
+}
 
     
 //Validación del formulario
