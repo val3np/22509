@@ -50,12 +50,18 @@ form.addEventListener('submit', btnSubmit);
         if (nombre.length == 0 || nombre.length === ''){
             alert("Debe ingresar su nombre");
             return;
-        }
+        } else if(nombre != isNaN(nombre)){
+            alert("Nombre inválido");
+            return 
+        } else{}
 
         if (apellido.length == 0 || nombre.length === ''){
             alert("Debe ingresar su apellido");
             return;
-        }
+        } else if(nombre != isNaN(nombre)){
+            alert("Apellido inválido");
+            return 
+        } else{}
 
         if (email.length == 0 || nombre.length === ''){
             alert("Debe ingresar su email");
