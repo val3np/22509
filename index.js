@@ -1,5 +1,8 @@
 //Para abrir y cerrar el menú
 
+localStorage.setItem("monedero",0)
+localStorage.setItem("cantLibro1",0)
+
 function accion(){
     let prueba = document.getElementsByClassName("btn-menu");
     for(let i = 0; i < prueba.length; i++){
@@ -355,4 +358,44 @@ function compraLibro(){
       }).showToast();
 }
 
+function suma_libro1(){
+    let nuevaCant = document.getElementById("cantLibro1")
+    console.log(nuevaCant)
+    nuevaCant.innerText = parseInt(nuevaCant.innerText) + 1
+    localStorage.setItem("cantLibro1",localStorage.getItem("cantLibro1")+1)
+    localStorage.setItem("monedero",parseInt(parseInt(localStorage.getItem("monedero")) + 3750))
+    Toastify({
+        text: "Los Hijos del Rey agregado al carrito!",
+        duration: 3000,
+        gravity: 'up',
+        position: 'right',
+    }).showToast();
+}
 
+function quita_libro1(){
+    let nuevaCant = document.getElementById("cantLibro1")
+    if(0 == parseInt(nuevaCant.innerText))
+        Toastify({
+            text: "No puedes hacer eso, agrega productos primero",
+            duration: 3000,
+            gravity: 'up',
+            position: 'right',
+        }).showToast();
+    else{
+        nuevaCant.innerText = parseInt(nuevaCant.innerText) - 1
+        localStorage.setItem("cantLibro1",localStorage.getItem("cantLibro1") - 1)
+        localStorage.setItem("monedero",parseInt(parseInt(localStorage.getItem("monedero")) - 3750))
+        Toastify({
+            text: "Elemento removido con exito",
+            duration: 3000,
+            gravity: 'up',
+            position: 'right',
+        }).showToast();
+    }
+}
+
+let btn_aniade1 = document.getElementById("aniadir-libro1");
+btn_aniade1.addEventListener("click",suma_libro1)
+
+let btn_quita1 = document.getElementById("quitar-libro1");
+btn_quita1.addEventListener("click",quita_libro1)
