@@ -20,7 +20,6 @@ header{
     flex-direction: column;
 }
 
-
 header h1{
     margin-top: 0.8rem;
     font-size: 4rem;
@@ -45,7 +44,6 @@ header .btn-menu{
     top: 0;
     z-index: 20;
 }
-
   
 .nav ul{
     list-style: none;
@@ -260,6 +258,10 @@ h2 a{
     border: none;
 }
 
+.title-compra-libro{
+    display: inline-block;
+    margin: 10px;
+}
 
 .btn-ver:hover, .btn-comprar:hover{
     background-color: rgb(11, 94, 215);

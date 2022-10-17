@@ -2,6 +2,23 @@
 
 localStorage.setItem("monedero",0)
 localStorage.setItem("cantLibro1",0)
+localStorage.setItem("cantLibro2",0)
+localStorage.setItem("cantLibro3",0)
+localStorage.setItem("cantLibro4",0)
+localStorage.setItem("cantLibro5",0)
+localStorage.setItem("cantLibro6",0)
+localStorage.setItem("cantLibro7",0)
+localStorage.setItem("cantLibro8",0)
+localStorage.setItem("cantLibro9",0)
+localStorage.setItem("cantLibro10",0)
+localStorage.setItem("cantLibro11",0)
+localStorage.setItem("cantLibro12",0)
+localStorage.setItem("cantLibro13",0)
+localStorage.setItem("cantLibro14",0)
+localStorage.setItem("cantLibro15",0)
+localStorage.setItem("cantLibro16",0)
+localStorage.setItem("cantLibro17",0)
+localStorage.setItem("cantLibro18",0)
 
 function accion(){
     let prueba = document.getElementsByClassName("btn-menu");
@@ -26,7 +43,6 @@ function acciones(){
     }
 }
 
-    
 //Validación del formulario
 
 let form = document.querySelector('#form');
@@ -358,22 +374,25 @@ function compraLibro(){
       }).showToast();
 }
 
-function suma_libro1(){
-    let nuevaCant = document.getElementById("cantLibro1")
-    console.log(nuevaCant)
+function suma_libro(num,id){
+    let suma = parseInt(num)
+    let nombreId = "cantLibro"+ id
+    let nuevaCant = document.getElementById(nombreId)
     nuevaCant.innerText = parseInt(nuevaCant.innerText) + 1
-    localStorage.setItem("cantLibro1",localStorage.getItem("cantLibro1")+1)
-    localStorage.setItem("monedero",parseInt(parseInt(localStorage.getItem("monedero")) + 3750))
+    localStorage.setItem(nombreId,localStorage.getItem(nombreId)+1)
+    localStorage.setItem("monedero",parseInt(parseInt(localStorage.getItem("monedero")) + suma))
     Toastify({
-        text: "Los Hijos del Rey agregado al carrito!",
+        text: "Producto agregado al carrito!" + localStorage.getItem("monedero"),
         duration: 3000,
         gravity: 'up',
         position: 'right',
     }).showToast();
 }
 
-function quita_libro1(){
-    let nuevaCant = document.getElementById("cantLibro1")
+function quita_libro(num,id){
+    let resta = parseInt(num)
+    let nombreId = "cantLibro"+ id
+    let nuevaCant = document.getElementById(nombreId)
     if(0 == parseInt(nuevaCant.innerText))
         Toastify({
             text: "No puedes hacer eso, agrega productos primero",
@@ -383,19 +402,13 @@ function quita_libro1(){
         }).showToast();
     else{
         nuevaCant.innerText = parseInt(nuevaCant.innerText) - 1
-        localStorage.setItem("cantLibro1",localStorage.getItem("cantLibro1") - 1)
-        localStorage.setItem("monedero",parseInt(parseInt(localStorage.getItem("monedero")) - 3750))
+        localStorage.setItem(nombreId,localStorage.getItem(nombreId) - 1)
+        localStorage.setItem("monedero",parseInt(parseInt(localStorage.getItem("monedero")) - resta))
         Toastify({
-            text: "Elemento removido con exito",
+            text: "Producto removido con exito" + localStorage.getItem("monedero"),
             duration: 3000,
             gravity: 'up',
             position: 'right',
         }).showToast();
     }
 }
-
-let btn_aniade1 = document.getElementById("aniadir-libro1");
-btn_aniade1.addEventListener("click",suma_libro1)
-
-let btn_quita1 = document.getElementById("quitar-libro1");
-btn_quita1.addEventListener("click",quita_libro1)

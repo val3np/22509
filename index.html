@@ -96,10 +96,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Lou, Reid, Coco y Ansel huyen no solo del aquelarre, sino también del reino y de la Iglesia. Son fugitivos y no tienen donde ocultarse. Para sobrevivir, necesitan aliados. Y unos muy poderosos. Pero mientras Lou se preocupa cada vez más por salvar a sus seres queridos, se adentra en el lado oscuro de la magia. Y el precio a pagar podría ser la persona a la que más teme perder: Reid. Ellos están unidos por un juramento y solo existe una cosa que puede separarlos: la muerte.</p>
-                    <button class="btn-comprar" onclick="compraLibro()">Comprar</button>
-                    <a class="btn-comprar" id="quitar-libro1" href="#">-</a>
-                    <p id="cantLibro1">0</p>
-                    <a class="btn-comprar" id="aniadir-libro1" href="#">+</a>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(3750,1)">-</button>
+                    <p class="btn-comprar" id="cantLibro1">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(3750,1)">+</button>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Will, un joven de dieciséis años que trabaja en el puerto; está huyendo; perseguido por los hombres que mataron a su madre. Luego, un viejo sirviente le revela que su destino es luchar junto a los Guardianes. Will se ve inmerso en un mundo de magia; donde empieza a entrenar para desempeñar un papel fundamental en la batalla que se avecina contra la Oscuridad. Will deberá apoyar a los últimos héroes de la Luz para evitar que el destino que destruyó su mundo regrese para destruir el suyo.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(3490,2)">-</button>
+                    <p class="btn-comprar" id="cantLibro2">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(3490,2)">+</button>
                   </div>
                 </div>
               </div>
@@ -131,7 +134,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Brenda Gómez tiene una vida perfecta. Es una alumna destacada en la carrera de Ciencias Económicas, su novio es un joven ambicioso y con un gran futuro, sus amigas son leales, su familia la adora. Pero ella no es feliz. La domina un mundo interior complejo, plagado de sentimientos e ideas que ocult. De los secretos que esconde, uno la atormenta especialmente: ama a Diego Bertoni desde que tiene memoria, un amor extraño por varias razones, pero sobre todo un amor prohibido.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(4200,3)">-</button>
+                    <p class="btn-comprar" id="cantLibro3">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(4200,3)">+</button>
                   </div>
                 </div>
               </div>
@@ -184,7 +190,10 @@
                 <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                 <h4 class="subtitle-card">Sipnósis</h4>
                 <p class="subtitle-content">La saga Dune es la cumbre de la ciencia ficción contemporánea. Esta quinta entrega de la serie prosigue con las aventuras de la estirpe de los Atreides en el fascinante planeta de arena. Nos hallamos en el futuro respecto a la acción de Dios emperador de Dune. La expansión galáctica que siguió a la muerte de Leto ha terminado. Todos regresan al planeta madre; convertido de nuevo en el mundo inhóspito y seco de sus orígenes. El delicado equilibrio entre las antiguas fuerzas está a punto de romperse.</p>
-                <button class="btn-comprar">Comprar</button>
+                <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(4000,4)">-</button>
+                    <p class="btn-comprar" id="cantLibro4">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(4000,4)">+</button>
               </div>
             </div>
           </div>
@@ -200,7 +209,10 @@
                 <p class="text-card"><b>Fecha de publicación: </b>2020</p>
                 <h4 class="subtitle-card">Sipnósis</h4>
                 <p class="subtitle-content">Cuando Edward Cullen y Bella Swan se conocieron en Crepúsculo; nació una historia de amor icónica. Pero hasta ahora; sus fans solo conocen la historia a través de Bella. Por fin los lectores podrán vivir la versión de Edward en la muy esperada novela Sol de medianoche. La inolvidable historia; contada a través de los ojos de Edward, toma un cariz nuevo y definitivamente oscuro. Conocer a Bella es lo más perturbador e intrigante que le ha sucedido en todos sus años como vampiro.</p>
-                <button class="btn-comprar">Comprar</button>
+                <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                <button class="btn-comprar" onclick="quita_libro(6750,5)">-</button>
+                <p class="btn-comprar" id="cantLibro5">0</p>
+                <button class="btn-comprar" onclick="suma_libro(6750,5)">+</button>
               </div>
             </div>
           </div>
@@ -216,7 +228,10 @@
                 <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                 <h4 class="subtitle-card">Sipnósis</h4>
                 <p class="subtitle-content">Primera parte de la trilogía El bosque; un romance paranormal para todos los corazones dormidos. La vida de Clara; una adolescente de diecisiete años, cambia de un momento a otro al morir su abuela. Sin otros familiares cercanos, debe dejar Barcelona y mudarse a Colmenar, un pequeño pueblo donde reside el único pariente vivo que le queda: su tío Álvaro. Lejos de su casa y de sus amigos, deberá adaptarse a un nuevo sitio en el que siente una presencia extraña y oye ruidos escalofriantes por la noche.</p>
-                <button class="btn-comprar">Comprar</button>
+                <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                <button class="btn-comprar" onclick="quita_libro(3250,6)">-</button>
+                <p class="btn-comprar" id="cantLibro6">0</p>
+                <button class="btn-comprar" onclick="suma_libro(3250,6)">+</button>
               </div>
             </div>
           </div>
@@ -271,7 +286,10 @@
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">"Si la auténtica prueba para juzgar la calidad de una novela es la relectura, y los placeres que aporta la relectura, entonces Orgullo y prejuicio supera cualquier novela jamás escrita", Harold Bloom.</p> 
                     <p class="subtitle-content parrafo2">"Es una verdad universalmente aceptada que un hombre soltero en posesión de una notable fortuna necesita una esposa".</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(2400,7)">-</button>
+                    <p class="btn-comprar" id="cantLibro7">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(2400,7)">+</button>
                   </div>
                 </div>
               </div>
@@ -287,7 +305,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Érase una vez una mujer que lo tenía todo y un chico que no tenía nada. Érase una vez una historia de amor entre el éxito y la duda. Érase una vez un cuento perfecto. Elísabet Benavent, regresa al panorama de la literatura con una novela que explora el significado del éxito en la vida y reflexiona con ironía y humor acerca de las imposiciones sociales; la presión del grupo y la autoexigencia que; aunque cueste creerlo; no es sinónimo de felicidad. Los lectores han dicho... «¡Un libro magnífico. Adictivo! Una historia real, bien escrita.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(6750,8)">-</button>
+                    <p class="btn-comprar" id="cantLibro8">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(6750,8)">+</button>
                   </div>
                 </div>
               </div>
@@ -303,7 +324,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">AALIYAH es una gimnasta que sueña con una vida mejor y que hará todo lo que sea necesario para alcanzarla. SHAWN es un alma sensible que pronto irá a la universidad para convertirse en escritor. Primero pasará unas vacaciones en la playa con sus amigos. Allí van a encontrarse y entre atardeceres; sonrisas y palabras que jamás creyeron ser capaces de decir, sentirán que se conocen desde siempre. Pero el destino torcerá sus planes y su romance de verano les dejará las heridas más profundas.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(3500,9)">-</button>
+                    <p class="btn-comprar" id="cantLibro9">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(3500,9)">+</button>
                   </div>
                 </div>
               </div>
@@ -355,7 +379,10 @@
                   <p class="text-card"><b>Fecha de publicación: </b>2013</p>
                   <h4 class="subtitle-card">Sipnósis</h4>
                   <p class="subtitle-content">Emotiva; irónica y afilada. Una novela teñida de humor y de tragedia que habla de nuestra capacidad para soñar incluso en las circunstancias más difíciles. A Hazel y a Gus les gustaría tener vidas más corrientes. Algunos dirían que no han nacido con estrella, que su mundo es injusto. Hazel y Gus son solo adolescentes; pero si algo les ha enseñado el cáncer que ambos padecen es que no hay tiempo para lamentaciones, porque nos guste o no, solo existe el hoy y el ahora. </p>
-                  <button class="btn-comprar">Comprar</button>
+                  <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                  <button class="btn-comprar" onclick="quita_libro(4100,10)">-</button>
+                  <p class="btn-comprar" id="cantLibro10">0</p>
+                  <button class="btn-comprar" onclick="suma_libro(4100,10)">+</button>
                 </div>
               </div>
             </div>
@@ -371,7 +398,10 @@
                   <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                   <h4 class="subtitle-card">Sipnósis</h4>
                   <p class="subtitle-content">Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre emails llenos de confidencias, dudas e inquietudes.  Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación? </p>
-                  <button class="btn-comprar">Comprar</button>
+                  <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                  <button class="btn-comprar" onclick="quita_libro(3500,11)">-</button>
+                  <p class="btn-comprar" id="cantLibro11">0</p>
+                  <button class="btn-comprar" onclick="suma_libro(3500,11)">+</button>
                 </div>
               </div>
             </div>
@@ -388,7 +418,10 @@
                   <h4 class="subtitle-card">Sipnósis</h4>
                   <p class="subtitle-content">Anne Shirley siempre ha querido ser escritora, y aunque nadie lo sepa, lo es: online la conocen como Lady Cordelia y sus historias sobre El caballero del espejo, una de las series más famosas de los últimos tiempos; son de las más leídas de la red. Sólo Diana, su mejor amiga; artista y colaboradora, conoce el secreto de su doble identidad. Anne está acostumbrada a esa vida hasta que aparece Blythe, un nuevo autor que de la noche a la mañana supera su récord de lecturas y que; para colmo, no tiene ningún reparo en mostrar su identidad.
                   </p>
-                  <button class="btn-comprar">Comprar</button>
+                  <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                  <button class="btn-comprar" onclick="quita_libro(3750,12)">-</button>
+                  <p class="btn-comprar" id="cantLibro12">0</p>
+                  <button class="btn-comprar" onclick="suma_libro(3750,12)">+</button>
                 </div>
               </div>
             </div>
@@ -441,7 +474,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Jamie Conklin, el único hijo de una madre soltera, solo quiere tener una infancia normal. Sin embargo, nació con una habilidad sobrenatural que su madre le insta a mantener en secreto y que le permite ver aquello que nadie puede y enterarse de lo que el resto del mundo ignora. Cuando una inspectora del Departamento de Policía de Nueva York le obliga a evitar el último atentado de un asesino que amenaza con seguir atacando incluso desde la tumba, Jamie no tardará en descubrir el precio que debe pagar por su poder. </p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(6300,13)">-</button>
+                    <p class="btn-comprar" id="cantLibro13">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(6300,13)">+</button>
                   </div>
                 </div>
               </div>
@@ -457,7 +493,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">En mitad de la noche en un barrio tranquilo de Minneapolis raptan a Luke Ellis, de doce años; tras haber asesinado a sus padres. Una operación que dura menos de dos minutos. Luke se despierta en la siniestra institución conocida como el Instituto, en un cuarto que se asemeja al suyo pero sin ventanas. En habitaciones parecidas hay más niños: Kalisha, Nick, George, Iris y Avery Dixon; entre otros, que comparten capacidades especiales como la telequinesia o la telepatía.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(5350,14)">-</button>
+                    <p class="btn-comprar" id="cantLibro14">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(5350,14)">+</button>
                   </div>
                 </div>
               </div>
@@ -473,7 +512,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2020</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Cuanto más sangrienta y violenta es una noticia, más llama la atención de la gente: «La sangre manda». Así reza la máxima periodística que hará que Holly Gibney, la detective a la que Bill Hodges legó su agencia Finders Keepers, y uno de los personajes más queridos por los fans de Stephen King, se interese por la matanza en el instituto Albert Macready y acabe enganchada a las noticias. En esta ocasión deberá luchar contra lo que más teme...; protagoniza su primer gran caso en solitario.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(6300,15)">-</button>
+                    <p class="btn-comprar" id="cantLibro15">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(6300,15)">+</button>
                   </div>
                 </div>
               </div>
@@ -524,7 +566,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2022</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Estoy seguro de que puedo contar esta historia. También estoy seguro de que nadie se la creerá. Eso me da igual. Me basta con contarla. Para mí, está claro que para muchos escritores, no solo los novatos como yo, el problema es decidir por dónde empezar. (...) Y ahora, mientras pienso en esas cosas, veo un claro hilo que conduce a lo largo de los años hasta el señor Bowditch y el cobertizo cerrado con candado detrás de su vieja y ruinosa casa victoriana. </p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(9000,16)">-</button>
+                    <p class="btn-comprar" id="cantLibro16">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(9000,16)">+</button>
                   </div>
                 </div>
                 <div class="triangulo6" id="triangulo18"></div>
@@ -541,7 +586,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">En mitad de la noche en un barrio tranquilo de Minneapolis raptan a Luke Ellis, de doce años; tras haber asesinado a sus padres. Una operación que dura menos de dos minutos. Luke se despierta en la siniestra institución conocida como el Instituto, en un cuarto que se asemeja al suyo pero sin ventanas. En habitaciones parecidas hay más niños: Kalisha, Nick, George, Iris y Avery Dixon; entre otros, que comparten capacidades especiales como la telequinesia o la telepatía.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(4450,17)">-</button>
+                    <p class="btn-comprar" id="cantLibro17">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(4450,17)">+</button>
                   </div>
                 </div>
               </div>
@@ -557,7 +605,10 @@
                     <p class="text-card"><b>Fecha de publicación: </b>2021</p>
                     <h4 class="subtitle-card">Sipnósis</h4>
                     <p class="subtitle-content">Puede que Carrie White no sea la chica más popular del colegio, pero tiene un poder único. Carrie es capaz de mover cosas con su mente. Las puertas se cierran. Las velas caen. Es su poder y su tragedia. Entonces, un acto de bondad, tan espontáneo como las constantes burlas de sus compañeros de clase, ofrece a Carrie la oportunidad de convertirse en alguien normal hasta que una inesperada crueldad transforma su don en un arma de horror y destrucción que nadie podrá olvidar jamás.</p>
-                    <button class="btn-comprar">Comprar</button>
+                    <h4 class="subtitle-card title-compra-libro">Comprar: </h4>
+                    <button class="btn-comprar" onclick="quita_libro(4900,18)">-</button>
+                    <p class="btn-comprar" id="cantLibro18">0</p>
+                    <button class="btn-comprar" onclick="suma_libro(4900,18)">+</button>
                   </div>
                 </div>
               </div>
