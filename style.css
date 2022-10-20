@@ -307,25 +307,6 @@ h2 a {
     z-index: 10;
 }
 
-#libros2,
-#libros4 {
-    margin-top: 4rem;
-}
-
-#libro1 .subtitle-content,
-#libro2 .subtitle-content,
-#libro4 .subtitle-content,
-#libro5 .subtitle-content,
-#libro9 .subtitle-content,
-#libro11 .subtitle-content,
-#libro13 .subtitle-content,
-#libro14 .subtitle-content,
-#libro15 .subtitle-content,
-#libro17 .subtitle-content,
-#libro18 .subtitle-content{
-    margin-bottom: 1.1rem;
-}
-
 .desaparecer {
     display: none;
 }
@@ -395,6 +376,7 @@ h2 a {
     margin-left: 2rem;
     padding-right: 1rem;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .parrafo2 {
@@ -705,31 +687,27 @@ span {
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-@media(max-width: 1484px){
-    .subtitle-content {
-    margin-bottom: 0rem;
-    }
+/* @media(max-width: 1484px){
+    
+} */
 
-    #libro1 .subtitle-content,
-    #libro2 .subtitle-content,
-    #libro4 .subtitle-content,
-    #libro5 .subtitle-content,
-    #libro9 .subtitle-content,
-    #libro11 .subtitle-content,
-    #libro13 .subtitle-content,
-    #libro14 .subtitle-content,
-    #libro15 .subtitle-content,
-    #libro17 .subtitle-content,
-    #libro18 .subtitle-content{
-    margin-bottom: 0rem;
-}
-}
+@media(max-width: 1480px){
 
-@media (max-width: 1480px){
     
 
+    .card-content {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .btn-cerrar button {
+        top: 1.5rem;
+        left: 1.4rem;
+    }
+    
 }
-@media (max-width: 1474px) {
+
+@media (max-width: 1477px) {
     /*----------------------------------------------------------------------Inicio-----------------------------------------------------------*/
     /*Informaión cards*/
 
@@ -751,7 +729,7 @@ span {
     }
 
     .btn-cerrar button {
-        top: -1rem;
+        top: -1.5rem;
         left: 1.4rem;
     }
 
@@ -779,7 +757,7 @@ span {
 
 }
 
-@media (max-width: 1463px) {
+@media (max-width: 1468px) {
     .btn-cerrar button {
         top: 1.5rem;
         left: 1.4rem;
@@ -1025,7 +1003,7 @@ span {
     }
 
     #libros2 {
-        top: 72rem;
+        top: 76rem;
         left: 10rem;
     }
 
@@ -1034,16 +1012,16 @@ span {
     }
 
     #libros4 {
-        top: 164rem;
+        top: 168rem;
         left: 10rem;
     }
 
     #libros5 {
-        top: 230rem;
+        top: 233rem;
     }
 
     #libros6 {
-        top: 260rem;
+        top: 261rem;
     }
 
     /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
@@ -1105,25 +1083,25 @@ span {
     }
 
     #libros2 {
-        top: 130rem;
+        top: 137rem;
         left: 9.3rem;
     }
 
     #libros3 {
-        top: 225rem;
+        top: 232rem;
     }
 
     #libros4 {
-        top: 305rem;
+        top: 315rem;
         left: 9.3rem;
     }
 
     #libros5 {
-        top: 402rem;
+        top: 406rem;
     }
 
     #libros6 {
-        top: 485rem;
+        top: 491rem;
     }
 
     /*------------------------------------------------------------Somos-----------------------------------------------------------------------*/
