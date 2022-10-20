@@ -47,40 +47,40 @@ form.addEventListener('submit', btnSubmit);
         let textConsulta = document.getElementById('txt-area').value;
         let elementoActivo = document.querySelector('input[name="motivo"]:checked');
 
+        if (textConsulta != '' & nombre != '' & apellido != '' & email != '' & pais != '' ){
+            alert ("Debe completar el formulario");
+            return false;
+        }
+        
         if (nombre.length == 0 || nombre.length === ''){
             alert("Debe ingresar su nombre");
-            return;
-        } else if(nombre != isNaN(nombre)){
-            alert("Nombre inválido");
-            return 
-        } else{}
+            return false;
+        }
 
         if (apellido.length == 0 || nombre.length === ''){
             alert("Debe ingresar su apellido");
-            return;
-        } else if(nombre != isNaN(nombre)){
-            alert("Apellido inválido");
-            return 
-        } else{}
+            return false;
+        }
 
         if (email.length == 0 || nombre.length === ''){
             alert("Debe ingresar su email");
-            return;
+            return false;
         }
 
         if (pais.length == 0 || nombre.length === ''){
             alert("Debe ingresar su país");
-            return;
+            return false;
         }
           
         if(elementoActivo) {
         } else {
             alert('Debe seleccionar un motivo');
+            return false;
         }
 
         if (textConsulta.length == 0 || nombre.length === ''){
             alert("Debe ingresar su consulta o sugerencia");
-            return;
+            return false;
         }
    
         if (response.ok){
@@ -98,8 +98,7 @@ form.addEventListener('submit', btnSubmit);
                 },
                 onClick: function(){} // Callback after click
               }).showToast();
-            
-    } 
+    }
 };
 
 
@@ -360,5 +359,3 @@ function compraLibro(){
         },
       }).showToast();
 }
-
-
