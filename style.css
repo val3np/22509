@@ -277,6 +277,7 @@ h2 a {
     border: none;
 }
 
+
 .title-compra-libro {
     display: inline-block;
     margin: 10px;
@@ -704,19 +705,33 @@ span {
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+@media(max-width: 1484px){
+    .subtitle-content {
+    margin-bottom: 0rem;
+    }
+
+    #libro1 .subtitle-content,
+    #libro2 .subtitle-content,
+    #libro4 .subtitle-content,
+    #libro5 .subtitle-content,
+    #libro9 .subtitle-content,
+    #libro11 .subtitle-content,
+    #libro13 .subtitle-content,
+    #libro14 .subtitle-content,
+    #libro15 .subtitle-content,
+    #libro17 .subtitle-content,
+    #libro18 .subtitle-content{
+    margin-bottom: 0rem;
+}
+}
+
+@media (max-width: 1480px){
+    
+
+}
 @media (max-width: 1474px) {
     /*----------------------------------------------------------------------Inicio-----------------------------------------------------------*/
     /*Informaión cards*/
-
-    .card-content {
-        position: relative;
-        bottom: 2.6rem;
-    }
-
-    .btn-cerrar button {
-        top: 1.5rem;
-        left: 1.4rem;
-    }
 
     .text-card {
         font-size: 0.95rem;
@@ -729,9 +744,66 @@ span {
     .btn-comprar {
         margin-top: 0;
     }
+
+     .information {
+        height: 27.5rem;
+        width: 100%;
+    }
+
+    .btn-cerrar button {
+        top: -1rem;
+        left: 1.4rem;
+    }
+
+    .card-content {
+        bottom: 0rem;
+    }
+
+    .information{
+        width: 96%;
+    }
+
+    #libro1 .subtitle-content,
+    #libro2 .subtitle-content,
+    #libro4 .subtitle-content,
+    #libro5 .subtitle-content,
+    #libro9 .subtitle-content,
+    #libro11 .subtitle-content,
+    #libro13 .subtitle-content,
+    #libro14 .subtitle-content,
+    #libro15 .subtitle-content,
+    #libro17 .subtitle-content,
+    #libro18 .subtitle-content{
+    margin-bottom: 1.1rem;
+    }
+
 }
 
+@media (max-width: 1463px) {
+    .btn-cerrar button {
+        top: 1.5rem;
+        left: 1.4rem;
+    }
+    
+    .card-content {
+        position: relative;
+        bottom: 2.5rem;
+    }
+}
+
+
+@media (max-width: 1427px) {
+    
+    .card-content {
+        bottom: 2.5rem;
+    }
+}
+
+
+
 @media (max-width: 1248px) {
+
+    
 
     /*------------------------------------------------Contacto------------------------------------------------------------------*/
     .form-container {
@@ -779,6 +851,8 @@ span {
         width: 35rem;
         height: 20rem;
     }
+
+
 }
 
 @media (max-width: 993px) {
@@ -951,8 +1025,8 @@ span {
     }
 
     #libros2 {
-        top: 75rem;
-        left: 11rem;
+        top: 72rem;
+        left: 10rem;
     }
 
     #libros3 {
@@ -960,8 +1034,8 @@ span {
     }
 
     #libros4 {
-        top: 165rem;
-        left: 11rem;
+        top: 164rem;
+        left: 10rem;
     }
 
     #libros5 {
@@ -1032,7 +1106,7 @@ span {
 
     #libros2 {
         top: 130rem;
-        left: 11rem;
+        left: 9.3rem;
     }
 
     #libros3 {
@@ -1041,7 +1115,7 @@ span {
 
     #libros4 {
         top: 305rem;
-        left: 11rem;
+        left: 9.3rem;
     }
 
     #libros5 {
@@ -1165,7 +1239,7 @@ span {
 
     #libros2 {
         top: 126rem;
-        left: 3.5rem;
+        left: 3rem;
     }
 
     #libros3 {
@@ -1174,7 +1248,7 @@ span {
 
     #libros4 {
         top: 300rem;
-        left: 3.5rem;
+        left: 3rem;
     }
 
     #libros5 {
