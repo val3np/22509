@@ -603,7 +603,7 @@ input[type='radio'] {
 .container-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .card-1 {
@@ -611,6 +611,8 @@ input[type='radio'] {
     position: relative;
     border: 0.1rem solid rgba(203, 196, 196, 0.5);
     padding: 2rem;
+    width: 90%;
+    margin: 0 0 0 1.5rem;
 }
 
 .card-2,
@@ -619,6 +621,8 @@ input[type='radio'] {
     border-bottom: 0.1rem solid rgba(203, 196, 196, 0.5);
     border-right: 0.1rem solid rgba(203, 196, 196, 0.5);
     padding: 2rem;
+    width: 90%;
+    margin: 0 0 0 1.5rem;
 }
 
 .card-3 {
@@ -1062,7 +1066,7 @@ span {
     .card-2,
     .card-3 {
         width: 30rem;
-        margin-left: 4.5rem;
+        margin-left: 0rem;
     }
 
     .mapa {
@@ -1148,6 +1152,7 @@ span {
 @media (max-width: 576px) {
     header {
         height: 4rem;
+        width: 100%;
     }
 
     header i {
@@ -1168,6 +1173,7 @@ span {
     .footer {
         align-items: center;
         flex-direction: column;
+        width: 100%;
     }
 
     .footer p {
@@ -1235,34 +1241,40 @@ span {
         top: 483rem;
     }
 
-    /*----------------------------------------------------Formulario---------------------------------------------------------------------*/
+    /*----------------------------------------------------Contacto---------------------------------------------------------------------*/
+    /*Formulario*/
+    .form-container{
+        margin-left: 0.5rem;
+    }
+    
     .form-btn {
-        margin-left: 1.5rem;
+        margin-left: 0rem;
         justify-content: center;
     }
 
     .form {
         padding: 0;
         margin: 0;
-        width: 70vw;
+        width: 100%;
+        margin-left: 4rem;
     }
 
     .form-input {
-        width: 20rem;
+        width: 85%;
     }
 
     .textarea {
-        min-width: 90%;
+        width: 80%;
     }
 
-
+    /*Mpa*/
     .mapa_1,
     .mapa_2,
     .mapa_3 {
         display: flex;
         justify-content: center;
         margin: 5rem 0em 2rem 0rem;
-        width: 25rem;
+        width: 80%;
         height: 20rem;
     }
 
@@ -1275,8 +1287,61 @@ span {
     .card-1,
     .card-2,
     .card-3 {
-        width: 25rem;
-        margin-left: 3rem;
+        width: 80%;
+        margin-left: 0rem;
     }
+}
+
+@media (max-width: 400px){
+    /*-------------------------------------------------------------Contacto----------------------------------------------------*/
+    /*Formulario*/
+    .form {
+        padding: 0;
+        margin: 0 0 0 2rem;
+        justify-content: center;
+    }
+
+    .form-input {
+        width: 18rem;
+    }
+
+     .textarea {
+        min-width: 17rem;
+    }
+
+    .form-btn {
+        margin-left: 0rem;
+        justify-content: center;
+    }
+    /*Mapa*/
+    .mapa_1,
+    .mapa_2,
+    .mapa_3 {
+        margin: 5rem 0rem 2.5rem 0;
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        min-width: 19rem;
+        margin-left: 0rem;
+        font-size: 0.9rem;
+        /* align-self: center;
+        align-items: center;
+        justify-self: center;
+        justify-items: center;
+        align-content: center; */
+    }
+
+    .card-title{
+        font-size: 1.1rem;
+    }
+
+    .card-text{
+        font-size: 1rem;
+    }
+
 
 }

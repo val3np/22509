@@ -17,7 +17,7 @@
         <h1>TuBook</h1>
 
         <button class="btn-menu icono-i" onclick="accion()"><i class="fa-solid fa-bars"></i></button>
-        <button class="btn-menu icono-x ocultar"onclick="accion()"><i class="fa-solid fa-x"></i></i></button>
+        <button class="btn-menu icono-x ocultar"onclick="accion()"><i class="fa-solid fa-x"></i></button>
     </header>
 
     <nav class="nav">
@@ -30,128 +30,132 @@
 
     <h1 id="title">Contacto</h1>
 
-    <section class="form-container">
-        <form class="form" name="form" id="form" action="https://formspree.io/f/xdojdyjk" method="POST" onsubmit="validacion()"> <!--action="https://formspree.io/f/maykorbq"-->
-
-            <div class="form-section">
-                <label for="name-cliente" class="label">Nombre</label>
-                <div class="formulario">
-                    <input type="text" class="form-input" name="nombre" id="nameCliente" maxlength="30"
-                        placeholder="Ingrese su nombre">
-                </div>
-            </div>
-
-            <div class="form-section">
-                <label for="last-name-cliente" class="label">Apellido</label>
-                <div class="formulario">
-                    <input type="text" name="apellido" class="form-input" id="lastName" maxlength="30"
-                        placeholder="Ingrese su apellido">
-                </div>
+    <main>
+        <section class="form-container">
+            <form class="form" name="form" id="form" action="https://formspree.io/f/xdojdyjk" method="POST" onsubmit="validacion()"> <!--action="https://formspree.io/f/maykorbq"-->
 
                 <div class="form-section">
-                    <label for="mail-cliente" class="label">Email</label>
+                    <label for="name-cliente" class="label">Nombre</label>
                     <div class="formulario">
-                        <input type="email" name="email" class="form-input" id="emailCliente"
-                            placeholder="Ingrese su mail">
+                        <input type="text" class="form-input" name="nombre" id="nameCliente" maxlength="30"
+                            placeholder="Ingrese su nombre">
                     </div>
                 </div>
 
                 <div class="form-section">
-                    <label for="telefono" class="label">Teléfono</label>
+                    <label for="last-name-cliente" class="label">Apellido</label>
                     <div class="formulario">
-                        <input type="number" name="celular" class="form-input" id="telefono"
-                            placeholder="Ingrese su número de teléfono">
+                        <input type="text" name="apellido" class="form-input" id="lastName" maxlength="30"
+                            placeholder="Ingrese su apellido">
                     </div>
-                </div>
 
-                <div class="form-section">
-                    <label for="country-cliente" class="label">País</label>
-                    <div class="formulario">
-                        <input type="text" name="pais" class="form-input" id="pais" maxlength="15"
-                            placeholder="Ingrese su país">
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <label for="motivo" class="label">Motivo del contacto</label>
-                    <div class="form-radio">
-                        <div class="form-radio-check">
-                            <input type="radio" name="motivo" id="consulta motivo" value="consulta">
-                            <label for="consulta motivo" class="label-radio">Consulta</label>
-                        </div>
-                        <div class="form-radio-check">
-                            <input type="radio" name="motivo" id="sugerencia motivo" value="sugerencia">
-                            <label for="sugerencia motivo" class="label-radio">Sugerencia</label>
+                    <div class="form-section">
+                        <label for="mail-cliente" class="label">Email</label>
+                        <div class="formulario">
+                            <input type="email" name="email" class="form-input" id="emailCliente"
+                                placeholder="Ingrese su mail">
                         </div>
                     </div>
+
+                    <div class="form-section">
+                        <label for="telefono" class="label">Teléfono</label>
+                        <div class="formulario">
+                            <input type="number" name="celular" class="form-input" id="telefono"
+                                placeholder="Ingrese su número de teléfono">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="country-cliente" class="label">País</label>
+                        <div class="formulario">
+                            <input type="text" name="pais" class="form-input" id="pais" maxlength="15"
+                                placeholder="Ingrese su país">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="motivo" class="label">Motivo del contacto</label>
+                        <div class="form-radio">
+                            <div class="form-radio-check">
+                                <input type="radio" name="motivo" id="consulta motivo" value="consulta">
+                                <label for="consulta motivo" class="label-radio">Consulta</label>
+                            </div>
+                            <div class="form-radio-check">
+                                <input type="radio" name="motivo" id="sugerencia motivo" value="sugerencia">
+                                <label for="sugerencia motivo" class="label-radio">Sugerencia</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="mensaje" class="label" id="mensaje">Mensaje</label>
+                        <br>
+                        <textarea name="mensaje" name="mensaje" class="textarea" id="txt-area" cols="30" rows="10"
+                            placeholder="Ingrese su mensaje"></textarea>
+                    </div>
+
+                    <div class="form-btn">
+                        <button type="reset" class="btn-borrar">Borrar</button>
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
                 </div>
+            </form>
+        </section>
 
-                <div class="form-section">
-                    <label for="mensaje" class="label" id="mensaje">Mensaje</label>
-                    <br>
-                    <textarea name="mensaje" name="mensaje" class="textarea" id="txt-area" cols="30" rows="10"
-                        placeholder="Ingrese su mensaje"></textarea>
-                </div>
+        <!--Mapa-->
+        <section class="mapa">
+            <div class="container-mapas">
+                <iframe class="mapa_1" id="mapa_1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.353840560443!2d-58.    40891766565616!3d-34.595601987383624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccabdfc191295%3A0x8110084c679e64c0!2sEl%20Ateneo%20Grand%20Splendid!5e0!3m2!1ses!2sar!4v16  62299302283!5m2!1ses!2sar"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <div class="form-btn">
-                    <button type="reset" class="btn-borrar">Borrar</button>
-                    <button type="submit" class="btn-enviar">Enviar</button>
-                </div>
-        </form>
-    </section>
+                <iframe class="mapa_2" id="mapa_2"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.012608755906!2d-58.    392926560449204!3d-34.60408179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccacda35ccced%3A0x4dcc4970d345fa80!2sEl%20Ateneo!5e0!3m2!1ses!2sar!4v1662300473969!5m2!1se  s!2sar"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <!--Mapa-->
-    <section class="mapa">
-        <div class="container-mapas">
-            <iframe class="mapa_1" id="mapa_1"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.353840560443!2d-58.    40891766565616!3d-34.595601987383624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccabdfc191295%3A0x8110084c679e64c0!2sEl%20Ateneo%20Grand%20Splendid!5e0!3m2!1ses!2sar!4v16  62299302283!5m2!1ses!2sar"
-                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <iframe class="mapa_2" id="mapa_2"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.012608755906!2d-58.    392926560449204!3d-34.60408179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x95bccacda35ccced%3A0x4dcc4970d345fa80!2sEl%20Ateneo!5e0!3m2!1ses!2sar!4v1662300473969!5m2!1se  s!2sar"
-                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <iframe class="mapa_3" id="mapa_3"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13142.65014534553!2d-58.47385226044922!3d-34.56209880000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d384c861bf%3A0xb80e9006506efdb5!2sEl%20Ateneo!5e0!3m2!1ses!2sar!4v1662300531463!5m2!1ses!2sar"
-                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        <div class="container-card">
-            <div class="card-1" id="card-1">
-                <div class="card-body">
-                    <h5 class="card-title">El Ateneo Grand Splendid</h5>
-                    <p class="card-text">Av. Santa Fe 1860, C1123 CABA</p>
-                </div>
+                <iframe class="mapa_3" id="mapa_3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13142.65014534553!2d-58.47385226044922!3d-34.56209880000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d384c861bf%3A0xb80e9006506efdb5!2sEl%20Ateneo!5e0!3m2!1ses!2sar!4v1662300531463!5m2!1ses!2sar"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="card-2" id="card-2">
-                <div class="card-body">
-                    <h5 class="card-title">El Ateneo</h5>
-                    <p class="card-text">Florida 340, C1005 AAH, Buenos Aires</p>
+            <div class="container-card">
+                <div class="card-1" id="card-1">
+                    <div class="card-body">
+                        <h5 class="card-title">El Ateneo Grand Splendid</h5>
+                        <p class="card-text">Av. Santa Fe 1860, C1123 CABA</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-3" id="card-3">
-                <div class="card-body">
-                    <h5 class="card-title">El Ateneo</h5>
-                    <p class="card-text">Av. Cabildo 2093, C1428AAC CABA</p>
+                <div class="card-2" id="card-2">
+                    <div class="card-body">
+                        <h5 class="card-title">El Ateneo</h5>
+                        <p class="card-text">Florida 340, C1005 AAH, Buenos Aires</p>
+                    </div>
+                </div>
+
+                <div class="card-3" id="card-3">
+                    <div class="card-body">
+                        <h5 class="card-title">El Ateneo</h5>
+                        <p class="card-text">Av. Cabildo 2093, C1428AAC CABA</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer class="footer">
-        <p>Copyright © <strong>TuBook</strong></p>
+        <p>Copyright © <strong id="logo">TuBook</strong></p>
         <div class="container-footer-icon">
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="index.js"></script>
 </body>
