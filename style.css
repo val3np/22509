@@ -1106,18 +1106,22 @@ span {
 
 }
 
-
 @media(max-width: 769px){
     .img-card{
         margin-left: 11.5rem;
     }
 }
 
-@media(max-width: 736px){
+@media(max-width: 735.2px){
     .information {
         position: absolute;
         width: 20rem;
     }
+
+    .card:hover{
+        transform: scale(1.0, 1.0);
+    }
+
     .card-information-title {
         margin-left: 0.5rem;
     }
