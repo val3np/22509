@@ -1004,7 +1004,6 @@ span {
 
     #libros2 {
         top: 76rem;
-        left: 10rem;
     }
 
     #libros3 {
@@ -1013,7 +1012,6 @@ span {
 
     #libros4 {
         top: 168rem;
-        left: 10rem;
     }
 
     #libros5 {
@@ -1037,13 +1035,12 @@ span {
     }
 }
 
+
 @media (max-width: 769px) {
 
     /*-----------------------------------------------------------Inicio-----------------------------------------------------------------------*/
     /*Información card*/
-    .fantasia:nth-child(2) {
-        grid-column-start: span 1;
-    }
+
 
     .information {
         height: auto;
@@ -1061,47 +1058,11 @@ span {
     .img-card {
         width: 12rem;
         height: 15rem;
-        margin-left: 2rem;
+        margin-left: 5rem;
     }
 
     .btn-comprar {
         margin-top: 1rem;
-    }
-
-
-    .information {
-        position: absolute;
-        width: 20rem;
-    }
-
-    #libros4 .card-information-title {
-        font-size: 1.2rem;
-    }
-
-    #libros {
-        top: 50rem;
-    }
-
-    #libros2 {
-        top: 137rem;
-        left: 9.3rem;
-    }
-
-    #libros3 {
-        top: 232rem;
-    }
-
-    #libros4 {
-        top: 315rem;
-        left: 9.3rem;
-    }
-
-    #libros5 {
-        top: 406rem;
-    }
-
-    #libros6 {
-        top: 491rem;
     }
 
     /*------------------------------------------------------------Somos-----------------------------------------------------------------------*/
@@ -1143,6 +1104,60 @@ span {
     }
 
 
+}
+
+
+@media(max-width: 769px){
+    .img-card{
+        margin-left: 11.5rem;
+    }
+}
+
+@media(max-width: 736px){
+    .information {
+        position: absolute;
+        width: 20rem;
+    }
+    .card-information-title {
+        margin-left: 0.5rem;
+    }
+
+    .btn-cerrar button {
+        top: -19rem;
+    }
+
+    #libros4 .card-information-title {
+        font-size: 1.2rem;
+    }
+
+    .img-card{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    #libros {
+        top: 50rem;
+    }
+
+    #libros2 {
+        top: 137rem;
+    }
+
+    #libros3 {
+        top: 232rem;
+    }
+
+    #libros4 {
+        top: 315rem;
+    }
+
+    #libros5 {
+        top: 406rem;
+    }
+
+    #libros6 {
+        top: 491rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1217,7 +1232,6 @@ span {
 
     #libros2 {
         top: 126rem;
-        left: 3rem;
     }
 
     #libros3 {
@@ -1226,7 +1240,6 @@ span {
 
     #libros4 {
         top: 300rem;
-        left: 3rem;
     }
 
     #libros5 {
