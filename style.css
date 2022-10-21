@@ -687,25 +687,6 @@ span {
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-/* @media(max-width: 1484px){
-    
-} */
-
-@media(max-width: 1480px){
-
-    
-
-    .card-content {
-        position: relative;
-        bottom: 3rem;
-    }
-
-    .btn-cerrar button {
-        top: 1.5rem;
-        left: 1.4rem;
-    }
-    
-}
 
 @media (max-width: 1477px) {
     /*----------------------------------------------------------------------Inicio-----------------------------------------------------------*/
@@ -1112,7 +1093,7 @@ span {
     }
 }
 
-@media(max-width: 735.2px){
+@media(max-width: 735.8px){
     .information {
         position: absolute;
         width: 20rem;
