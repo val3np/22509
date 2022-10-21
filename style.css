@@ -544,7 +544,7 @@ input[type='radio'] {
 .textarea {
     margin: 0.7rem 0 1rem 0;
     padding: 0.7rem;
-    min-width: 100%;
+    width: 100%;
     font-size: 1.1rem;
     border-radius: 0.5rem;
     outline: none;
@@ -1264,7 +1264,7 @@ span {
     }
 
     .textarea {
-        width: 80%;
+        width: 82%;
     }
 
     /*Mpa*/
@@ -1328,11 +1328,6 @@ span {
         min-width: 19rem;
         margin-left: 0rem;
         font-size: 0.9rem;
-        /* align-self: center;
-        align-items: center;
-        justify-self: center;
-        justify-items: center;
-        align-content: center; */
     }
 
     .card-title{
